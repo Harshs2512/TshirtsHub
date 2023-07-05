@@ -3,7 +3,7 @@ import { UilChart, UilHeartAlt, UilShoppingCart, UilRedo, UilDropbox, UilTruck, 
 import './ProductDetail.css'; // Import your custom CSS file
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import './ProductDetail.css';
-import Layout from '../../components/Layout/Layout';
+import Layout from '../../components/Layout/Layout'
 import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 import { Radio } from 'antd';
