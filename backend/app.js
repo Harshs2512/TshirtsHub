@@ -16,7 +16,7 @@ const path = require('path')
 
 
 app.use(cors({
-    origin: 'https://tshirts-hub.vercel.app/',
+    origin: 'https://tshirts-hub.vercel.app',
 }));
 
 app.use(express.json());
