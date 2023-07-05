@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(express.static(path.join(__dirname, '../frontend/build')))
+// app.use(express.static(path.join(__dirname, '../frontend/build')))
 
 const errorMiddleware = require("./middleware/error");
 app.use("/api/v1", userRoute);
@@ -39,14 +39,14 @@ app.get("/api/v1/getkey", (req, res) => {
 })
 
 
-app.use('*', function(req,res) {
-    res.sendFile(path.join(__dirname, '../frontend/build', 'index.js'))
-})
+// app.use('*', function(req,res) {
+//     res.sendFile(path.join(__dirname, '../frontend/build', 'index.js'))
+// })
 // Middleware for Error
 
 app.use(errorMiddleware);
 module.exports = app;
 
-app.listen(8000, () => {
-    console.log("the server is listening on port 8000");
-}); 
+// app.listen(8000, () => {
+//     console.log("the server is listening on port 8000");
+// }); 
