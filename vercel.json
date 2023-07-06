@@ -2,11 +2,19 @@
     "version": 2,
     "builds": [
         {
-            "src": "*.js",
+            "src": "backend/app.js",
             "use": "@vercel/node"
+        },
+        {
+            "src":"build/**",
+            "use":"@vercel/node"
         }
     ],
     "routes": [
+        {
+            "src": "/signup",
+            "dest": "backend/app.js"
+        },
         {
             "src": "/(.*)",
             "dest": "/"
