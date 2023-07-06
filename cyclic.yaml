@@ -1,7 +1,0 @@
-name: My Cyclic App
-build:
-  commands:
-    - npm ci
-    - npm run build
-deploy:
-  platform: cyclic
