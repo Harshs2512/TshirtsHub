@@ -1,23 +1,24 @@
 {
     "version": 2,
     "builds": [
-        {
-            "src": "app.js",
-            "use": "@vercel/node"
-        },
-        {
-            "src":"build/**",
-            "use":"@vercel/node"
-        }
+      {
+        "src": "backend/app.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "build/**",
+        "use": "@vercel/static"
+      }
     ],
     "routes": [
-        {
-            "src": "/signup",
-            "dest": "backend/app.js"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/"
-        }
+      {
+        "src": "/api/v1/register",
+        "dest": "backend/app.js"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
     ]
-}
+  }
+  
