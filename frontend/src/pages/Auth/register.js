@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Layout from "../../components/Layout/Layout";
 
 export default function SignUp() {
+    const vercelToken = '9dKG88CjiHXQp38zjdy9WGAa'
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -16,7 +17,10 @@ export default function SignUp() {
         console.log("adjfalksdjflkajsd")
         e.preventDefault();
         try {
-            const res = await axios.post("/api/v1/register", {
+            const res = await axios.post("https://api.vercel.com/v9/projects/api/v1/register", {
+                headers: {
+                    Authorization: 'Bearer ' + vercelToken,
+                },
                 email,
                 password,
                 fname,
@@ -31,14 +35,14 @@ export default function SignUp() {
                 toast.error(res.data.message);
             }
         } catch (error) {
-            console.log(error,"j");
+            console.log(error, "j");
             toast.error("error");
         }
     };
 
     return (
         <Layout title={"Login"}>
-            <ToastContainer/>
+            <ToastContainer />
             <div className='pt-20'>
                 <h1 className='font-bold text-4xl text-center tracking-widest'>Sign Up</h1>
                 <form onSubmit={handleSubmit} className="max-w-sm mx-auto mt-10">
