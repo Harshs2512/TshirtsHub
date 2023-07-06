@@ -1,16 +1,16 @@
 const express = require("express");
 require("dotenv").config();
-require("./db");
-const userRoute = require("./routes/userRoute");
+require("./backend/db");
+const userRoute = require("./backend/routes/userRoute");
 const app = express();
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
-const productRoute = require("./routes/productRoute");
-const commonRoute = require("./routes/commonRoute");
-const topicRoute = require("./routes/topicRoute");
-const categoryRoute = require("./routes/categoryRoute");
-const paymentRoute = require("./routes/paymentRoute");
-const orderRoute = require("./routes/orderRoute");
+const productRoute = require("./backend/routes/productRoute");
+const commonRoute = require("./backend/routes/commonRoute");
+const topicRoute = require("./backend/routes/topicRoute");
+const categoryRoute = require("./backend/routes/categoryRoute");
+const paymentRoute = require("./backend/routes/paymentRoute");
+const orderRoute = require("./backend/routes/orderRoute");
 const cors = require('cors');
 const path = require('path')
 
@@ -24,9 +24,9 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(express.static(path.join(__dirname, '../frontend/build')))
+// app.use(express.static(path.join(__dirname, './frontend/build')))
 
-const errorMiddleware = require("./middleware/error");
+const errorMiddleware = require("./backend/middleware/error");
 app.use("/api/v1", userRoute);
 app.use("/api/v1", productRoute);
 app.use("/api/v1", commonRoute);
@@ -40,9 +40,9 @@ app.get("/api/v1/getkey", (req, res) => {
 })
 
 
-app.use('*', function(req,res) {
-    res.sendFile(path.join(__dirname, '../frontend/build', 'index.js'))
-})
+// app.use('*', function(req,res) {
+//     res.sendFile(path.join(__dirname, '../frontend/build', 'index.js'))
+// })
 // Middleware for Error
 
 app.use(errorMiddleware);
