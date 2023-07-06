@@ -41,7 +41,7 @@ app.get("/api/v1/getkey", (req, res) => {
 
 
 app.use('*', function(req,res) {
-    res.sendFile(path.join(__dirname, './frontend/build', 'index.js'))
+    res.sendFile(path.join(__dirname, './frontend/build'))
 })
 // Middleware for Error
 
