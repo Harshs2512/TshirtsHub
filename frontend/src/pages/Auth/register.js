@@ -17,11 +17,7 @@ export default function SignUp() {
         console.log("adjfalksdjflkajsd")
         e.preventDefault();
         try {
-            const res = await axios.post("https://api.vercel.com/v9/projects/api/v1/register", {
-                method: 'post',
-                headers: {
-                    Authorization: 'Bearer ' + vercelToken,
-                },
+            const res = await axios.post("https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/register", {
                 email,
                 password,
                 fname,
