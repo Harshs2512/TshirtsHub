@@ -18,6 +18,7 @@ export default function SignUp() {
         e.preventDefault();
         try {
             const res = await axios.post("https://api.vercel.com/v9/projects/api/v1/register", {
+                method: 'post',
                 headers: {
                     Authorization: 'Bearer ' + vercelToken,
                 },
