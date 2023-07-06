@@ -13,6 +13,7 @@ export default function SignUp() {
     const [lname, setLname] = useState('');
 
     const handleSubmit = async (e) => {
+        console.log("adjfalksdjflkajsd")
         e.preventDefault();
         try {
             const res = await axios.post("/api/v1/register", {
