@@ -48,6 +48,6 @@ app.get("/api/v1/getkey", (req, res) => {
 app.use(errorMiddleware);
 module.exports = app;
 
-// app.listen(8000, () => {
-//     console.log("the server is listening on port 8000");
-// }); 
+app.listen(8000, () => {
+    console.log("the server is listening on port 8000");
+}); 
