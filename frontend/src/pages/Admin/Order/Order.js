@@ -34,7 +34,7 @@ const Order = () => {
 
     const Count = async () => {
         try {
-            const { data } = await axios.get("http://localhost:8000/api/v1/count/data");
+            const { data } = await axios.get("https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/count/data");
             setCount_data(data.count_data)
             console.log(data.count_data)
         } catch (error) {
@@ -50,7 +50,7 @@ const Order = () => {
             let answer = window.prompt("Are You Sure want to delete this product ? ");
             if (!answer) return;
             const { data } = await axios.delete(
-                `http://localhost:8000/api/v1/product/${id}`
+                `https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/product/${id}`
             );
             toast.success("Product DEleted Succfully");
             navigate("/account/admin/product");
@@ -64,7 +64,7 @@ const Order = () => {
     //get all products
     const getAllOrders = async () => {
         try {
-            const { data } = await axios.get("http://localhost:8000/api/v1/allorder");
+            const { data } = await axios.get("https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/allorder");
             setOrders(data.orders)
             console.log(data)
         } catch (error) {
@@ -80,7 +80,7 @@ const Order = () => {
 
     const handleChange = async (orderId, value) => {
         try {
-            const { data } = await axios.put(`http://localhost:8000/api/v1/myorders/status/${orderId}`, {
+            const { data } = await axios.put(`https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/myorders/status/${orderId}`, {
                 status: value,
             });
             getAllOrders();

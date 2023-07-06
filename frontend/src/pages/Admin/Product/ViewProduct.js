@@ -24,7 +24,7 @@ const ViewProduct = () => {
 
     const Count = async () => {
         try {
-            const { data } = await axios.get("http://localhost:8000/api/v1/count/data");
+            const { data } = await axios.get("https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/count/data");
             setCount_data(data.count_data)
             console.log(data.count_data)
         } catch (error) {
@@ -36,7 +36,7 @@ const ViewProduct = () => {
     //get all cat
     const getAllCategory = async () => {
         try {
-            const { data } = await axios.get("http://localhost:8000/api/v1/category/show_category/");
+            const { data } = await axios.get("https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/category/show_category/");
             console.log(data)
             if (data.success) {
                 setCategories(data.category);
@@ -52,7 +52,7 @@ const ViewProduct = () => {
         e.preventDefault();
         try {
             const { data } = await axios.put(
-                `http://localhost:8000/api/v1/category/category/${selected._id}/`,
+                `https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/category/category/${selected._id}/`,
                 { catName: updatedcatName }
 
             );
@@ -83,7 +83,7 @@ const ViewProduct = () => {
             let answer = window.prompt("Are You Sure want to delete this product ? ");
             if (!answer) return;
             const { data } = await axios.delete(
-                `http://localhost:8000/api/v1/product/${id}`
+                `https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/product/${id}`
             );
             toast.success("Product DEleted Succfully");
             navigate("/account/admin/product");
@@ -97,7 +97,7 @@ const ViewProduct = () => {
     //get all products
     const getAllProducts = async () => {
         try {
-            const { data } = await axios.get("http://localhost:8000/api/v1/products");
+            const { data } = await axios.get("https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/products");
             setProduct(data.products)
             console.log(data.products)
         } catch (error) {

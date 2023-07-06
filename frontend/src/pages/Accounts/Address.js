@@ -90,7 +90,7 @@ const Address = () => {
             setErrors(validationErrors);
         }
         try {
-            const { data } = await axios.put('http://localhost:8000/api/v1/me/update', {
+            const { data } = await axios.put('https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/me/update', {
                 address: {
                     pincode,
                     building,

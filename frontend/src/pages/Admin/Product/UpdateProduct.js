@@ -29,7 +29,7 @@ export default function CreateCategory() {
     const getSingleProduct = async () => {
         try {
             const { data } = await axios.get(
-                `http://localhost:8000/api/v1/products/${params.slug}`
+                `https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/products/${params.slug}`
             );
             setTitle(data.product.title);
             setDescription(data.product.description);
@@ -52,7 +52,7 @@ export default function CreateCategory() {
 
     const getAllCategory = async () => {
         try {
-            const { data } = await axios.get("http://localhost:8000/api/v1/category/show_category/");
+            const { data } = await axios.get("https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/category/show_category/");
             if (data.success) {
                 setCategories(data.categories);
             }
@@ -82,7 +82,7 @@ export default function CreateCategory() {
             productData.append("photo", photo);
             productData.append("category", category);
             console.log(pid)
-            const { data } = await axios.put(`http://localhost:8000/api/v1/product/${pid}`, productData);
+            const { data } = await axios.put(`https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/product/${pid}`, productData);
             if (data?.success) {
                 toast.success(data?.message);
                 setTimeout(() => {
@@ -255,7 +255,7 @@ export default function CreateCategory() {
                                         ) : (
                                             <div className="text-center">
                                                 <img
-                                                    src={`http://localhost:8000/api/v1/product-photo/${pid}`}
+                                                    src={`https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/product-photo/${pid}`}
                                                     alt="product_photo"
                                                     height={"200px"}
                                                     className="img img-responsive"

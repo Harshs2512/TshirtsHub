@@ -25,7 +25,7 @@ export default function PrivateRoute() {
                 });
             };
             console.log(auth.token)
-            //     // const res = await axios.get("http://localhost:8000/api/v1/user");
+            //     // const res = await axios.get("https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/user");
             //     const res = localStorage.getItem(toString("auth"))
             //     const parseData = JSON.parse(res)
             //     console.log(parseData)

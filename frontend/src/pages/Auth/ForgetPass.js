@@ -14,7 +14,7 @@ const ForgetPassword = () => {
         e.preventDefault();
     
         const sendEmail = async () => {
-          await axios.post("http://localhost:8000/api/v1/password/forgot/", {
+          await axios.post("https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/password/forgot/", {
             email
           });
         };

@@ -48,7 +48,7 @@ const DefaultStore = () => {
     //Products
     const getAllProducts = async () => {
         try {
-            const { data } = await axios.get("http://localhost:8000/api/v1/products");
+            const { data } = await axios.get("https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/products");
             setProducts(data.products)
             setFilterCheck(true);
         }
@@ -62,7 +62,7 @@ const DefaultStore = () => {
     //get all cat
     const getAllCategory = async () => {
         try {
-            const { data } = await axios.get("http://localhost:8000/api/v1/category/show_category/");
+            const { data } = await axios.get("https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/category/show_category/");
             if (data.success) {
                 setCategories(data.categories);
             }
@@ -159,7 +159,7 @@ const DefaultStore = () => {
     //get filterd product
     const filterProduct = async () => {
         try {
-            const { data } = await axios.post("http://localhost:8000/api/v1/product-filters", {
+            const { data } = await axios.post("https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/product-filters", {
                 checked,
                 radio,
                 selectedColors,
@@ -462,7 +462,7 @@ const DefaultStore = () => {
                                             </Link>
                                             <img
                                                 className=""
-                                                src={`http://localhost:8000/api/v1/product-photo/${p._id}`}
+                                                src={`https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/product-photo/${p._id}`}
                                                 alt="" />
                                             <div className="px-3 mt-1">
                                                 <h5

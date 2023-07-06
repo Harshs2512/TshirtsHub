@@ -15,7 +15,7 @@ const Orders = () => {
   const userId = auth.user && auth.user._id
   const getOrders = async () => {
     try {
-      const { data } = await axios.get(`http://localhost:8000/api/v1/myorders/${userId}`);
+      const { data } = await axios.get(`https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/myorders/${userId}`);
       setOrders(data);
     } catch (error) {
       console.log(error);
@@ -53,7 +53,7 @@ const Orders = () => {
                   <div className='grid grid-cols-5 gap-2 bg-gray-100 shadow-lg border border-gray-400 p-3 rounded-md'>
                     <div className='w-20 col-span-1'>
                       {p.products.map((photo) => (
-                        <img src={`http://localhost:8000/api/v1/product-photo/${photo._id}`} alt="(test)" className='mb-6' />
+                        <img src={`https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/product-photo/${photo._id}`} alt="(test)" className='mb-6' />
                       ))}
                     </div>
                     <div className='col-span-1'>

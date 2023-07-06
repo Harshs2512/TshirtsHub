@@ -12,7 +12,7 @@ const SearchBar = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.get(`http://localhost:8000/api/v1/product/search/${keyword}`);
+            const { data } = await axios.get(`https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/product/search/${keyword}`);
             // setValues({ ...values, results: data });
             navigate("/search");
         } catch (error) {
@@ -24,7 +24,7 @@ const SearchBar = () => {
         const value = e.target.value;
         setKeyword(value);
         try {
-            const { data } = await axios.get(`http://localhost:8000/api/v1/product/search/${value}`);
+            const { data } = await axios.get(`https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/product/search/${value}`);
             setResults(data);
 
         }
@@ -93,7 +93,7 @@ const SearchBar = () => {
                             {results.map((result) => (
                                 <Link to={`/product/${result.slug}`}>
                                     <div key={result.id} className="">
-                                        <img className="w-20" src={`http://localhost:8000/api/v1/product-photo/${result._id}`} alt={result.title} />
+                                        <img className="w-20" src={`https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/product-photo/${result._id}`} alt={result.title} />
                                         <p className="text-gray-800 font-bold ml-5">{result.title}</p>
                                     </div>
                                 </Link>

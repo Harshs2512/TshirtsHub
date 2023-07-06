@@ -15,7 +15,7 @@ export default function CreateCategory() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("http://localhost:8000/api/v1/category/add_category", {
+      const { data } = await axios.post("https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/category/add_category", {
         catName,
       });
       if (data?.success) {

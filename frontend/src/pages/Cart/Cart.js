@@ -121,7 +121,7 @@ const Cart = () => {
     const getSimilarProduct = async (pid, cid) => {
         try {
             const { data } = await axios.get(
-                `http://localhost:8000/api/v1/related-product/${pid}/${cid}`
+                `https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/related-product/${pid}/${cid}`
             );
             setRelatedProducts(data?.products);
         } catch (error) {
@@ -171,8 +171,8 @@ const Cart = () => {
         try {
             setLoading(true)
             // Make an API call to your server to create a Razorpay order
-            const { data: { key } } = await axios.get('http://localhost:8000/api/v1/getkey')
-            const response = await axios.post('http://localhost:8000/api/v1/payment/create', {
+            const { data: { key } } = await axios.get('https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/getkey')
+            const response = await axios.post('https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/payment/create', {
                 amount: calculateSubtotal(),
             });
             setResponse(response.data)
@@ -242,7 +242,7 @@ const Cart = () => {
         const payment = calculateSubtotal()
         try {
             console.log("caha")
-            const response = await axios.post('http://localhost:8000/api/v1/order', {
+            const response = await axios.post('https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/order', {
                 products,
                 payment,
                 user,
@@ -284,7 +284,7 @@ const Cart = () => {
             setErrors(validationErrors);
         }
         try {
-            const { data } = await axios.put('http://localhost:8000/api/v1/me/update', {
+            const { data } = await axios.put('https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/me/update', {
                 address: {
                     pincode,
                     building,
@@ -369,7 +369,7 @@ const Cart = () => {
                                         <div>
                                             <div className='flex p-3 border border-gray-300 mb-1'>
                                                 <div className='flex'>
-                                                    <img src={`http://localhost:8000/api/v1/product-photo/${p._id}`} className='w-36'></img>
+                                                    <img src={`https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/product-photo/${p._id}`} className='w-36'></img>
                                                     <div className='ml-10'>
                                                         <div className='flex'>
                                                             <p className='text-stone-800 font-bold'>{p.title}</p>

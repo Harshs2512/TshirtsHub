@@ -20,7 +20,7 @@ const ConfirmPassword = () => {
 
         try {
             const res = await axios.put(
-                `http://localhost:8000/api/v1/password/reset/${token}`,
+                `https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/password/reset/${token}`,
                 {
                     password,
                     confirmPassword

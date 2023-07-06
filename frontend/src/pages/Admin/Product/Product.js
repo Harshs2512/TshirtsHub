@@ -14,7 +14,7 @@ export default function Category() {
     const [count_data, setCount_data] = useState([]);
     const Count = async () => {
         try {
-            const { data } = await axios.get("http://localhost:8000/api/v1/count/data");
+            const { data } = await axios.get("https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/count/data");
             setCount_data(data.count_data)
             console.log(data.count_data)
         } catch (error) {

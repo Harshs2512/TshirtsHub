@@ -26,7 +26,7 @@ export default function CreateCategory() {
 
     const getAllCategory = async () => {
         try {
-            const { data } = await axios.get("http://localhost:8000/api/v1/category/show_category/");
+            const { data } = await axios.get("https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/category/show_category/");
             console.log(data)
             if (data.success) {
                 setCategories(data.categories);
@@ -56,7 +56,7 @@ export default function CreateCategory() {
             productData.append("color", color);
             productData.append("photo", photo);
             productData.append("category", category);
-            const { data } = await axios.post("http://localhost:8000/api/v1/product/new", productData);
+            const { data } = await axios.post("https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/product/new", productData);
             if (data?.success) {
                 toast.success(data?.message);
                 // setTimeout(() => {

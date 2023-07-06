@@ -62,7 +62,7 @@ const ProductDetail = () => {
     const getProduct = async () => {
         try {
             const { data } = await axios.get(
-                `http://localhost:8000/api/v1/products/${params.slug}`
+                `https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/products/${params.slug}`
             );
             setProduct(data?.product);
             getSimilarProduct(data?.product._id, data?.product.category._id);
@@ -75,7 +75,7 @@ const ProductDetail = () => {
     const getSimilarProduct = async (pid, cid) => {
         try {
             const { data } = await axios.get(
-                `http://localhost:8000/api/v1/related-product/${pid}/${cid}`
+                `https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/related-product/${pid}/${cid}`
             );
             setRelatedProducts(data?.products);
         } catch (error) {
@@ -162,7 +162,7 @@ const ProductDetail = () => {
                                     </button>
                                 </div>
                                 <TransformComponent>
-                                    <img src={`http://localhost:8000/api/v1/product-photo/${product._id}`} alt="(test)" />
+                                    <img src={`https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/product-photo/${product._id}`} alt="(test)" />
                                 </TransformComponent>
                             </React.Fragment>
                         )}
@@ -352,7 +352,7 @@ const ProductDetail = () => {
                                 <Link to={`/product/${p.slug}`} >
                                     <img
                                         className="rounded-lg"
-                                        src={`http://localhost:8000/api/v1/product-photo/${p._id}`}
+                                        src={`https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/product-photo/${p._id}`}
                                         alt="" />
                                     <div className="px-3 mt-1">
                                         <h5

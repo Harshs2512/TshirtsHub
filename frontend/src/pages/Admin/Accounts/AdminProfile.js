@@ -27,7 +27,7 @@ const AdminProfile = () => {
 
     const ProfileData = async () => {
         try {
-            const { data } = await axios.get('http://localhost:8000/api/v1/me');
+            const { data } = await axios.get('https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/me');
             setFirstName(data.user.fname);
             setLastName(data.user.lname);
             setEmail(data.user.email);
@@ -46,7 +46,7 @@ const AdminProfile = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.put('http://localhost:8000/api/v1/me/update', {
+            const { data } = await axios.put('https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/me/update', {
                 fname,
                 lname,
                 email,

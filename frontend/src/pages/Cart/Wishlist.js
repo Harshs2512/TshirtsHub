@@ -50,7 +50,7 @@ const WishlistPage = () => {
     //getProduct
     const getProduct = async () => {
         try {
-            const { data } = await axios.get('http://localhost:8000/api/v1/products');
+            const { data } = await axios.get('https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/products');
             setProduct(data.products);
             // getSimilarProduct(data?.product._id, data?.product.category._id);
         } catch (error) {
@@ -141,7 +141,7 @@ const WishlistPage = () => {
                                     >
                                         <UilTimes />
                                     </button>
-                                    <img src={`http://localhost:8000/api/v1/product-photo/${p._id}`} className='w-full h-auto'></img>
+                                    <img src={`https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/product-photo/${p._id}`} className='w-full h-auto'></img>
                                     <div className='p-2'>
                                         <div className='flex'>
                                             <p className='text-stone-800 font-bold'>{p.title}</p>

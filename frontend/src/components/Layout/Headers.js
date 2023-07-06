@@ -50,7 +50,7 @@ const Header = () => {
   //   const handleLogout = async (e) => {  
   //     e.preventDefault();
   //     try {
-  //       await axios.get("http://localhost:8000/api/v1/logout");
+  //       await axios.get("https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/logout");
   //       setAuth({
   //         ...auth,
   //         user: null,

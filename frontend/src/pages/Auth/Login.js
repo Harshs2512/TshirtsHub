@@ -16,7 +16,7 @@ export default function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("http://localhost:8000/api/v1/login/", {
+            const res = await axios.post("https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/login/", {
                 email,
                 password,
             });

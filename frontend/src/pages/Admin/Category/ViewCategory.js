@@ -22,7 +22,7 @@ const ViewCategory = () => {
     //get all cat
     const getAllCategory = async () => {
         try {
-            const { data } = await axios.get("http://localhost:8000/api/v1/category/show_category/");
+            const { data } = await axios.get("https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/category/show_category/");
             console.log(data)
             if (data.success) {
                 setCategories(data.categories);
@@ -42,7 +42,7 @@ const ViewCategory = () => {
         e.preventDefault();
         try {
             const { data } = await axios.put(
-                `http://localhost:8000/api/v1/category/category/${selected._id}/`,
+                `https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/category/category/${selected._id}/`,
                 { catName: updatedcatName }
             );
             if (data?.success) {
@@ -64,7 +64,7 @@ const ViewCategory = () => {
     const handleDelete = async (id) => {
         try {
             const { data } = await axios.delete(
-                `http://localhost:8000/api/v1/category/category/${id}/`
+                `https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/category/category/${id}/`
             );
             if (data.success) {
                 toast.success(`Category Deleted successfully`);
