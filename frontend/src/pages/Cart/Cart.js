@@ -236,7 +236,7 @@ const Cart = () => {
             // Handle the case where the _id is missing or undefined
             console.log("_id is required");
             return; // Stop further execution
-          }
+        }
         const products = [updatedProduct]
         console.log(products)
         const payment = calculateSubtotal()
@@ -474,8 +474,8 @@ const Cart = () => {
                     }
                 </>) : (
                     <div className='text-center items-center justify-center -mt-10'>
-                        <img className='w-96 ml-[28rem]' src={loginimg} />
-                        <h1 className='text-4xl font-bold tracking-wider'>Please Login To Access Cart</h1>
+                        <img className='xs:w-80 md:w-80 lg:w-96 xs:ml-11 md:ml-[16rem] lg:ml-[28rem]' src={loginimg} />
+                        <h1 className='xs:text-2xl lg:text-4xl md:text-2xl  font-bold tracking-wider'>Please Login To Access Cart</h1>
                         <h1 className='text-lg text-gray-500 tracking-wider mt-3'>We are vaiting for you</h1>
                         <Link to='/login'>
                             <button type="button" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-lg px-10 py-2.5 text-center mt-3 mx-auto">Login Now</button>
