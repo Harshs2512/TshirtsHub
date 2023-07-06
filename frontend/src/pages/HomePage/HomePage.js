@@ -21,24 +21,23 @@ const HomePage = () => {
         <div>
           {/* NEW ARRIVALS */}
           <h1 className='text-3xl font-bold tracking-widest text-center py-10 text-[#7570ff] mt-9 uppercase'>New Arrivals</h1>
-          <div className='grid md:grid-cols-4 grid-cols-1 gap-7 px-5'>
+          <div className='grid md:grid-cols-3 xs:grid-cols-2 lg:grid-cols-4 md:gap-7 gap-1 gap-y-5 px-5'>
             <div
-              className="block bg-white ">
+              className="block bg-white">
               <a href="#!">
                 <img
-                  className="pt-1 px-1"
                   src="3.jpg"
                   alt="" />
               </a>
-              <div className="rounded-full relative top-[-21.5rem] left-56 w-10 h-10 p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+              <div className="rounded-full relative xs:top-[-15.3rem] xs:left-[9.5rem] md:top-[-18.7rem] md:left-[11.6rem] lg:top-[-21.8rem] lg:left-56 md:w-10 md:h-10 w-9 h-9 p-1.5 md:p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
                 <UilHeartAlt />
               </div>
               <div className="px-2 py-3 -mt-10">
                 <h5
-                  className="mb-2 text-lg font-medium leading-tight text-neutral-800">
+                  className="mb-2 md:text-lg text-md font-medium leading-tight text-neutral-800">
                   Tshirt title
                 </h5>
-                <p className="mb-1 text-lg text-neutral-600">
+                <p className="mb-1 md:text-lg text-sm text-neutral-600">
                   TShirt
                 </p>
                 <hr />
@@ -47,222 +46,108 @@ const HomePage = () => {
                 <p className="mb-2 text-base font-bold text-neutral-900">
                   ₹ 599
                 </p>
-                <p className="mb-1 ml-8 font-bold text-base line-through text-red-500">
+                <p className="mt-1 ml-5 font-semibold text-sm line-through text-gray-400">
                   ₹ 999
+                </p>
+                <p className="ml-5 font-semibold text-base text-green-500">
+                  20%
                 </p>
               </div>
             </div>
             {/* ---------------- */}<div
-              className="block bg-gray-100 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+              className="block bg-white">
               <a href="#!">
                 <img
-                  className="pt-1 px-1"
                   src="3.jpg"
                   alt="" />
               </a>
-              <div className="rounded-full relative top-[-21.5rem] left-56 w-10 h-10 p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+              <div className="rounded-full relative xs:top-[-15.3rem] xs:left-[9.5rem] md:top-[-18.7rem] md:left-[11.6rem] lg:top-[-21.8rem] lg:left-56 md:w-10 md:h-10 w-9 h-9 p-1.5 md:p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
                 <UilHeartAlt />
               </div>
-              <div className="px-6 py-3">
+              <div className="px-2 py-3 -mt-10">
                 <h5
-                  className="mb-2 text-lg font-medium leading-tight text-neutral-800">
+                  className="mb-2 md:text-lg text-md font-medium leading-tight text-neutral-800">
                   Tshirt title
                 </h5>
-                <p className="mb-1 text-lg text-neutral-600">
+                <p className="mb-1 md:text-lg text-sm text-neutral-600">
                   TShirt
                 </p>
                 <hr />
               </div>
-              <div className='flex px-6'>
+              <div className='flex px-2'>
                 <p className="mb-2 text-base font-bold text-neutral-900">
                   ₹ 599
                 </p>
-                <p className="mb-1 ml-8 font-bold text-base line-through text-red-500">
+                <p className="mt-1 ml-5 font-semibold text-sm line-through text-gray-400">
                   ₹ 999
+                </p>
+                <p className="ml-5 font-semibold text-base text-green-500">
+                  20%
                 </p>
               </div>
             </div>
             {/* ----------------------- */}
             <div
-              className="block bg-gray-100 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+              className="block bg-white">
               <a href="#!">
                 <img
-                  className="pt-1 px-1"
                   src="3.jpg"
                   alt="" />
               </a>
-              <div className="rounded-full relative top-[-21.5rem] left-56 w-10 h-10 p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+              <div className="rounded-full relative xs:top-[-15.3rem] xs:left-[9.5rem] md:top-[-18.7rem] md:left-[11.6rem] lg:top-[-21.8rem] lg:left-56 md:w-10 md:h-10 w-9 h-9 p-1.5 md:p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
                 <UilHeartAlt />
               </div>
-              <div className="px-6 py-3">
+              <div className="px-2 py-3 -mt-10">
                 <h5
-                  className="mb-2 text-lg font-medium leading-tight text-neutral-800">
+                  className="mb-2 md:text-lg text-md font-medium leading-tight text-neutral-800">
                   Tshirt title
                 </h5>
-                <p className="mb-1 text-lg text-neutral-600">
+                <p className="mb-1 md:text-lg text-sm text-neutral-600">
                   TShirt
                 </p>
                 <hr />
               </div>
-              <div className='flex px-6'>
+              <div className='flex px-2'>
                 <p className="mb-2 text-base font-bold text-neutral-900">
                   ₹ 599
                 </p>
-                <p className="mb-1 ml-8 font-bold text-base line-through text-red-500">
+                <p className="mt-1 ml-5 font-semibold text-sm line-through text-gray-400">
                   ₹ 999
+                </p>
+                <p className="ml-5 font-semibold text-base text-green-500">
+                  20%
                 </p>
               </div>
             </div>
             <div
-              className="block bg-gray-100 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+              className="block bg-white">
               <a href="#!">
                 <img
-                  className="pt-1 px-1"
                   src="3.jpg"
                   alt="" />
               </a>
-              <div className="rounded-full relative top-[-21.5rem] left-56 w-10 h-10 p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+              <div className="rounded-full relative xs:top-[-15.3rem] xs:left-[9.5rem] md:top-[-18.7rem] md:left-[11.6rem] lg:top-[-21.8rem] lg:left-56 md:w-10 md:h-10 w-9 h-9 p-1.5 md:p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
                 <UilHeartAlt />
               </div>
-              <div className="px-6 py-3">
+              <div className="px-2 py-3 -mt-10">
                 <h5
-                  className="mb-2 text-lg font-medium leading-tight text-neutral-800">
+                  className="mb-2 md:text-lg text-md font-medium leading-tight text-neutral-800">
                   Tshirt title
                 </h5>
-                <p className="mb-1 text-lg text-neutral-600">
+                <p className="mb-1 md:text-lg text-sm text-neutral-600">
                   TShirt
                 </p>
                 <hr />
               </div>
-              <div className='flex px-6'>
+              <div className='flex px-2'>
                 <p className="mb-2 text-base font-bold text-neutral-900">
                   ₹ 599
                 </p>
-                <p className="mb-1 ml-8 font-bold text-base line-through text-red-500">
+                <p className="mt-1 ml-5 font-semibold text-sm line-through text-gray-400">
                   ₹ 999
                 </p>
-              </div>
-            </div>
-          </div>
-          <div className='grid grid-cols-4 gap-7 px-5 mt-10'>
-            <div
-              className="block bg-gray-100 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-              <a href="#!">
-                <img
-                  className="pt-1 px-1"
-                  src="3.jpg"
-                  alt="" />
-              </a>
-              <div className="rounded-full relative top-[-21.5rem] left-56 w-10 h-10 p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-                <UilHeartAlt />
-              </div>
-              <div className="px-6 py-3">
-                <h5
-                  className="mb-2 text-lg font-medium leading-tight text-neutral-800">
-                  Tshirt title
-                </h5>
-                <p className="mb-1 text-lg text-neutral-600">
-                  TShirt
-                </p>
-                <hr />
-              </div>
-              <div className='flex px-6'>
-                <p className="mb-2 text-base font-bold text-neutral-900">
-                  ₹ 599
-                </p>
-                <p className="mb-1 ml-8 font-bold text-base line-through text-red-500">
-                  ₹ 999
-                </p>
-              </div>
-            </div>
-            {/* ---------------- */}<div
-              className="block bg-gray-100 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-              <a href="#!">
-                <img
-                  className="pt-1 px-1"
-                  src="3.jpg"
-                  alt="" />
-              </a>
-              <div className="rounded-full relative top-[-21.5rem] left-56 w-10 h-10 p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-                <UilHeartAlt />
-              </div>
-              <div className="px-6 py-3">
-                <h5
-                  className="mb-2 text-lg font-medium leading-tight text-neutral-800">
-                  Tshirt title
-                </h5>
-                <p className="mb-1 text-lg text-neutral-600">
-                  TShirt
-                </p>
-                <hr />
-              </div>
-              <div className='flex px-6'>
-                <p className="mb-2 text-base font-bold text-neutral-900">
-                  ₹ 599
-                </p>
-                <p className="mb-1 ml-8 font-bold text-base line-through text-red-500">
-                  ₹ 999
-                </p>
-              </div>
-            </div>
-            {/* ----------------------- */}
-            <div
-              className="block bg-gray-100 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-              <a href="#!">
-                <img
-                  className="pt-1 px-1"
-                  src="3.jpg"
-                  alt="" />
-              </a>
-              <div className="rounded-full relative top-[-21.5rem] left-56 w-10 h-10 p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-                <UilHeartAlt />
-              </div>
-              <div className="px-6 py-3">
-                <h5
-                  className="mb-2 text-lg font-medium leading-tight text-neutral-800">
-                  Tshirt title
-                </h5>
-                <p className="mb-1 text-lg text-neutral-600">
-                  TShirt
-                </p>
-                <hr />
-              </div>
-              <div className='flex px-6'>
-                <p className="mb-2 text-base font-bold text-neutral-900">
-                  ₹ 599
-                </p>
-                <p className="mb-1 ml-8 font-bold text-base line-through text-red-500">
-                  ₹ 999
-                </p>
-              </div>
-            </div>
-            <div
-              className="block bg-gray-100 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-              <a href="#!">
-                <img
-                  className="pt-1 px-1"
-                  src="3.jpg"
-                  alt="" />
-              </a>
-              <div className="rounded-full relative top-[-21.5rem] left-56 w-10 h-10 p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-                <UilHeartAlt />
-              </div>
-              <div className="px-6 py-3">
-                <h5
-                  className="mb-2 text-lg font-medium leading-tight text-neutral-800">
-                  Tshirt title
-                </h5>
-                <p className="mb-1 text-lg text-neutral-600">
-                  TShirt
-                </p>
-                <hr />
-              </div>
-              <div className='flex px-6'>
-                <p className="mb-2 text-base font-bold text-neutral-900">
-                  ₹ 599
-                </p>
-                <p className="mb-1 ml-8 font-bold text-base line-through text-red-500">
-                  ₹ 999
+                <p className="ml-5 font-semibold text-base text-green-500">
+                  20%
                 </p>
               </div>
             </div>
@@ -279,13 +164,13 @@ const HomePage = () => {
         </div>
         <div>
           {/* CATEGORIES CARD BANNER*/}
-          <h1 className='text-3xl font-bold tracking-widest text-center py-10 text-[#7570ff] mt-9 uppercase'>categories</h1>
-          <div className='grid grid-rows-3 px-5 gap-5'>
-            <div className='grid grid-cols-3 gap-x-7'>
+          <h1 className='text-3xl font-bold tracking-widest text-center py-10 text-[#7570ff] md:mt-9  uppercase'>categories</h1>
+          <div className='grid grid-rows-3 px-5 md:gap-5 gap-2'>
+            <div className='grid md:grid-cols-3 md:gap-x-7'>
               <div className='col-span-2'>
                 <img className='h-96' src='1.jpg' alt='' />
               </div>
-              <div className='grid grid-rows-2 '>
+              <div className='md:grid md:grid-rows-2 hidden'>
                 <div className='h-auto max-w-full'>
                   <img className='h-auto max-w-full' src='cropbanner1.png' alt='' />
                 </div>
@@ -294,22 +179,22 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div className=' h-80 grid grid-cols-3 gap-x-7'>
+            <div className=' h-80 grid md:grid-cols-3 grid-cols-2 md:gap-x-7 gap-x-2'>
               <div className='bg-gray-600 '>
                 <img className='h-80 w-full' src='cropbanner3.jpg' alt='' />
               </div>
-              <div className='bg-gray-200 col-span-2'>
+              <div className='bg-gray-200 md:col-span-2'>
                 <img className='h-80 w-full' src='1.jpg' alt='' />
               </div>
             </div>
-            <div className='h-60 grid grid-cols-3 -mt-16 gap-x-7'>
+            <div className='h-60 grid md:grid-cols-3 -mt-16 gap-x-7'>
               <div className='bg-yellow-800'>
                 <img className='h-80 w-full' src='cropbanner4.jpg' alt='' />
               </div>
-              <div className='bg-yellow-600'>
+              <div className='hidden md:block bg-yellow-600'>
                 <img className='h-80 w-full' src='cropbanner5.jpg' alt='' />
               </div>
-              <div className='bg-yellow-400'>
+              <div className='hidden md:block bg-yellow-400'>
                 <img className='h-80 w-full' src='cropbanner4.jpg' alt='' />
               </div>
             </div>
@@ -317,13 +202,13 @@ const HomePage = () => {
         </div>
         <div>
           {/* circle design */}
-          <h1 className='text-3xl font-bold tracking-widest text-center py-10 text-[#7570ff] uppercase'>our service</h1>
+          <h1 className='text-3xl font-bold tracking-widest text-center md:pt-10 text-[#7570ff] uppercase'>our service</h1>
           <section>
             <div className="md:flex flex-wrap justify-center px-20 gap-20">
-              <div className="md:flex justify-center rotate-[45deg] rounded-full md:rotate-[-45deg] w-[200px] h-[200px]  border-solid border-[15px] "
+              <div className="md:flex gap-y-10 justify-center rotate-[45deg] rounded-full md:rotate-[-45deg] md:w-[200px] xs:w-[100px] xs:h-[100px] md:h-[200px] border-solid border-[15px]"
               >
                 <div
-                  className="rounded-full rotate-[-45deg] md:rotate-[45deg] bg-white w-[170px] h-[170px] flex justify-center shadow-2xl ">
+                  className="rounded-full rotate-[-45deg] md:rotate-[45deg] bg-white w-[120px] h-[120px] md:w-[170px] md:h-[170px] flex justify-center shadow-2xl ">
                   <div
                     className="rounded-full rotate-[0deg] md:rotate-[0deg] bg-white  w-[150px] h-[150px] flex justify-center mt-[10px] shadow-[inset_0_-2px_6px_0px_rgba(0,0,0,0.6)]">
                     <p className="font-bold  bg-white mt-8 mb-5 text-[20px] ">
