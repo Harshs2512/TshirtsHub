@@ -29,7 +29,7 @@ const HomePage = () => {
                   src="3.jpg"
                   alt="" />
               </a>
-              <div className="rounded-full relative xs:top-[-15.3rem] xs:left-[9.5rem] md:top-[-18.7rem] md:left-[11.6rem] lg:top-[-21.8rem] lg:left-56 md:w-10 md:h-10 w-9 h-9 p-1.5 md:p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+              <div className="rounded-full relative xs:top-[-13.5rem] xs:left-[8.2rem] md:top-[-18.7rem] md:left-[11.6rem] lg:top-[-21.8rem] lg:left-56 md:w-10 md:h-10 w-9 h-9 p-1.5 md:p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
                 <UilHeartAlt />
               </div>
               <div className="px-2 py-3 -mt-10">
@@ -46,10 +46,10 @@ const HomePage = () => {
                 <p className="mb-2 text-base font-bold text-neutral-900">
                   ₹ 599
                 </p>
-                <p className="mt-1 ml-5 font-semibold text-sm line-through text-gray-400">
+                <p className="mt-1 ml-4 font-semibold text-sm line-through text-gray-400">
                   ₹ 999
                 </p>
-                <p className="ml-5 font-semibold text-base text-green-500">
+                <p className="ml-4 font-semibold text-base text-green-500">
                   20%
                 </p>
               </div>
@@ -61,7 +61,7 @@ const HomePage = () => {
                   src="3.jpg"
                   alt="" />
               </a>
-              <div className="rounded-full relative xs:top-[-15.3rem] xs:left-[9.5rem] md:top-[-18.7rem] md:left-[11.6rem] lg:top-[-21.8rem] lg:left-56 md:w-10 md:h-10 w-9 h-9 p-1.5 md:p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+              <div className="rounded-full relative xs:top-[-13.5rem] xs:left-[8.2rem] md:top-[-18.7rem] md:left-[11.6rem] lg:top-[-21.8rem] lg:left-56 md:w-10 md:h-10 w-9 h-9 p-1.5 md:p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
                 <UilHeartAlt />
               </div>
               <div className="px-2 py-3 -mt-10">
@@ -78,10 +78,10 @@ const HomePage = () => {
                 <p className="mb-2 text-base font-bold text-neutral-900">
                   ₹ 599
                 </p>
-                <p className="mt-1 ml-5 font-semibold text-sm line-through text-gray-400">
+                <p className="mt-1 ml-4 font-semibold text-sm line-through text-gray-400">
                   ₹ 999
                 </p>
-                <p className="ml-5 font-semibold text-base text-green-500">
+                <p className="ml-4 font-semibold text-base text-green-500">
                   20%
                 </p>
               </div>
@@ -94,7 +94,7 @@ const HomePage = () => {
                   src="3.jpg"
                   alt="" />
               </a>
-              <div className="rounded-full relative xs:top-[-15.3rem] xs:left-[9.5rem] md:top-[-18.7rem] md:left-[11.6rem] lg:top-[-21.8rem] lg:left-56 md:w-10 md:h-10 w-9 h-9 p-1.5 md:p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+              <div className="rounded-full relative xs:top-[-13.5rem] xs:left-[8.2rem] md:top-[-18.7rem] md:left-[11.6rem] lg:top-[-21.8rem] lg:left-56 md:w-10 md:h-10 w-9 h-9 p-1.5 md:p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
                 <UilHeartAlt />
               </div>
               <div className="px-2 py-3 -mt-10">
@@ -111,10 +111,10 @@ const HomePage = () => {
                 <p className="mb-2 text-base font-bold text-neutral-900">
                   ₹ 599
                 </p>
-                <p className="mt-1 ml-5 font-semibold text-sm line-through text-gray-400">
+                <p className="mt-1 ml-4 font-semibold text-sm line-through text-gray-400">
                   ₹ 999
                 </p>
-                <p className="ml-5 font-semibold text-base text-green-500">
+                <p className="ml-4 font-semibold text-base text-green-500">
                   20%
                 </p>
               </div>
@@ -126,7 +126,7 @@ const HomePage = () => {
                   src="3.jpg"
                   alt="" />
               </a>
-              <div className="rounded-full relative xs:top-[-15.3rem] xs:left-[9.5rem] md:top-[-18.7rem] md:left-[11.6rem] lg:top-[-21.8rem] lg:left-56 md:w-10 md:h-10 w-9 h-9 p-1.5 md:p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+              <div className="rounded-full relative xs:top-[-13.5rem] xs:left-[8.2rem] md:top-[-18.7rem] md:left-[11.6rem] lg:top-[-21.8rem] lg:left-56 md:w-10 md:h-10 w-9 h-9 p-1.5 md:p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
                 <UilHeartAlt />
               </div>
               <div className="px-2 py-3 -mt-10">
@@ -143,10 +143,10 @@ const HomePage = () => {
                 <p className="mb-2 text-base font-bold text-neutral-900">
                   ₹ 599
                 </p>
-                <p className="mt-1 ml-5 font-semibold text-sm line-through text-gray-400">
+                <p className="mt-1 ml-4 font-semibold text-sm line-through text-gray-400">
                   ₹ 999
                 </p>
-                <p className="ml-5 font-semibold text-base text-green-500">
+                <p className="ml-4 font-semibold text-base text-green-500">
                   20%
                 </p>
               </div>
@@ -200,19 +200,19 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className=''>
           {/* circle design */}
           <h1 className='text-3xl font-bold tracking-widest text-center md:pt-10 text-[#7570ff] uppercase'>our service</h1>
-          <section>
-            <div className="md:flex flex-wrap justify-center px-20 gap-20">
-              <div className="md:flex gap-y-10 justify-center rotate-[45deg] rounded-full md:rotate-[-45deg] md:w-[200px] xs:w-[100px] xs:h-[100px] md:h-[200px] border-solid border-[15px]"
+          <section className='xs:mt-6 md:mt-10'>
+            <div className="md:flex flex-wrap justify-center px-20 gap-20 ml-9">
+              <div className="md:flex gap-y-10 justify-center rotate-[45deg] rounded-full md:rotate-[-45deg] md:w-[200px] md:h-[200px] border-solid border-[15px] w-[10rem] h-[10rem] mb-3" 
               >
                 <div
-                  className="rounded-full rotate-[-45deg] md:rotate-[45deg] bg-white w-[120px] h-[120px] md:w-[170px] md:h-[170px] flex justify-center shadow-2xl ">
+                  className="rounded-full rotate-[-45deg] md:rotate-[45deg] bg-white w-[8.5rem] h-[8.5rem] md:w-[170px] md:h-[170px] flex justify-center shadow-2xl xs:-mt-1 xs:-ml-1 md:mt-[0.1em]">
                   <div
-                    className="rounded-full rotate-[0deg] md:rotate-[0deg] bg-white  w-[150px] h-[150px] flex justify-center mt-[10px] shadow-[inset_0_-2px_6px_0px_rgba(0,0,0,0.6)]">
-                    <p className="font-bold  bg-white mt-8 mb-5 text-[20px] ">
-                      SELECT <UilSearchAlt className="w-9 h-9 ml-3 mt-5 text-[#5c58e0]" />
+                    className="rounded-full rotate-[0deg] md:rotate-[0deg] bg-white md:w-[150px] md:h-[150px] w-[7.5rem] h-[7.5rem] flex justify-center md:mt-[10px] xs:mt-2 shadow-[inset_0_-2px_6px_0px_rgba(0,0,0,0.6)]">
+                    <p className="font-bold  bg-white md:mt-8 mt-5 mb-5 md:text-[20px] text-md">
+                      SELECT <UilSearchAlt className="w-9 h-9 xs:ml-2.5 md:ml-4 mt-5 text-[#5c58e0]" />
                     </p>
 
                   </div>
@@ -221,14 +221,14 @@ const HomePage = () => {
 
               {/* CIRCUL SECTION-2 */}
 
-              <div className="rounded-full rotate-[134.6deg] md:rotate-[45deg] w-[200px] h-[200px]  border-solid border-[15px] mt-[-14.3px] lg:mt-[0px]"
+              <div className="md:flex gap-y-10 justify-center rotate-[45deg] rounded-full md:rotate-[-45deg] md:w-[200px] md:h-[200px] border-solid border-[15px] w-[10rem] h-[10rem] mb-3"
               >
                 <div
-                  className="rounded-full rotate-[-134.8deg] md:rotate-[-45deg] bg-white shadow-2xl w-[170px] h-[170px] flex justify-center ">
+                  className="rounded-full rotate-[-45deg] md:rotate-[45deg] bg-white w-[8.5rem] h-[8.5rem] md:w-[170px] md:h-[170px] flex justify-center shadow-2xl xs:-mt-1 xs:-ml-1 md:-ml-1 md:mt-[0.1em]">
                   <div
-                    className="rounded-full rotate-[0deg] md:rotate-[0deg] bg-white shadow-2xl w-[150px] h-[150px] flex justify-center mt-[10px] shadow-[inset_0_-2px_4px_rgba(0,0,0,0.6)] ">
-                    <p className="font-bold  bg-white mt-8 mb-5 text-[20px]">
-                      CART <UilShoppingCartAlt className="w-9 h-9 ml-2 mt-5 text-[#5c58e0]" />
+                    className="rounded-full rotate-[0deg] md:rotate-[0deg] bg-white md:w-[150px] md:h-[150px] w-[7.5rem] h-[7.5rem] flex justify-center md:mt-[10px] xs:mt-2 shadow-[inset_0_-2px_6px_0px_rgba(0,0,0,0.6)]">
+                    <p className="font-bold  bg-white md:mt-8 mt-5 mb-5 md:text-[20px] text-md">
+                      CART <UilShoppingCartAlt className="w-9 h-9 xs:ml-1 md:ml-2 mt-5 text-[#5c58e0]" />
                     </p>
                   </div>
                 </div>
@@ -236,15 +236,14 @@ const HomePage = () => {
 
               {/* CIRCUL SECTION-3  */}
 
-              <div className="rounded-full rotate-[45.5deg] md:rotate-[-45deg] w-[200px] h-[200px] border-solid border-[15px]"
-              // style="border-color: transparent transparent #1A2942 #1A2942; "
+              <div className="md:flex gap-y-10 justify-center rotate-[45deg] rounded-full md:rotate-[-45deg] md:w-[200px] md:h-[200px] border-solid border-[15px] w-[10rem] h-[10rem] mb-3"
               >
                 <div
-                  className="rounded-full rotate-[-45.5deg] md:rotate-[45deg] bg-white shadow-2xl w-[170px] h-[170px] flex justify-center ">
+                  className="rounded-full rotate-[-45deg] md:rotate-[45deg] bg-white w-[8.5rem] h-[8.5rem] md:w-[170px] md:h-[170px] flex justify-center shadow-2xl xs:-mt-1 xs:-ml-1 md:mt-[0.1em]">
                   <div
-                    className="rounded-full rotate-[0deg] md:rotate-[0deg] bg-white shadow-2xl w-[150px] h-[150px] flex justify-center mt-[10px] shadow-[inset_0_-2px_4px_rgba(0,0,0,0.6)]">
-                    <p className="font-bold  bg-white mt-8 mb-7 text-[20px]">
-                      CHECKOUT <UilCheckCircle className="w-9 h-9 ml-8 mt-5 text-[#5c58e0]" />
+                    className="rounded-full rotate-[0deg] md:rotate-[0deg] bg-white md:w-[150px] md:h-[150px] w-[7.5rem] h-[7.5rem] flex justify-center md:mt-[10px] xs:mt-2 shadow-[inset_0_-2px_6px_0px_rgba(0,0,0,0.6)]">
+                    <p className="font-bold  bg-white mt-8 mb-7 md:text-[20px] text-md">
+                      CHECKOUT <UilCheckCircle className="w-9 h-9 xs:ml-6 md:ml-8 md:mt-5 mt-3 text-[#5c58e0]" />
                     </p>
                   </div>
                 </div>
@@ -252,15 +251,14 @@ const HomePage = () => {
 
               {/* CIRCUL SECTION-4 */}
 
-              <div className="rounded-full rotate-[134.2deg] md:rotate-[45deg] w-[200px] h-[200px]  border-solid border-[15px]"
-              // style="border-color: #1A2942 transparent transparent #1A2942;"
+              <div className="md:flex gap-y-10 justify-center rotate-[45deg] rounded-full md:rotate-[-45deg] md:w-[200px] md:h-[200px] border-solid border-[15px] w-[10rem] h-[10rem]"
               >
                 <div
-                  className="rounded-full rotate-[-134.8deg] md:rotate-[-45deg] bg-white shadow-2xl w-[170px] h-[170px] flex justify-center ">
+                  className="rounded-full rotate-[-45deg] md:rotate-[45deg] bg-white w-[8.5rem] h-[8.5rem] md:w-[170px] md:h-[170px] flex justify-center shadow-2xl xs:-mt-1 xs:-ml-1 md:mt-[0.1em]">
                   <div
-                    className="rounded-full rotate-[0deg] md:rotate-[0deg] bg-white shadow-2xl w-[150px] h-[150px] flex justify-center mt-[10px] shadow-[inset_0_-2px_4px_rgba(0,0,0,0.6)]">
-                    <p className="font-bold  bg-white mt-8 mb-7 text-[20px]">
-                      DELEVERED <UilTruck className="w-9 h-9 ml-8 mt-5 text-[#5c58e0]" />
+                    className="rounded-full rotate-[0deg] md:rotate-[0deg] bg-white md:w-[150px] md:h-[150px] w-[7.5rem] h-[7.5rem] flex justify-center md:mt-[10px] xs:mt-2 shadow-[inset_0_-2px_6px_0px_rgba(0,0,0,0.6)]">
+                    <p className="font-bold bg-white mt-8 mb-7 md:text-[20px] text-md">
+                      DELEVERED <UilTruck className="w-9 h-9 xs:ml-6 md:ml-9 md:mt-5 mt-3 text-[#5c58e0]" />
                     </p>
                   </div>
                 </div>
