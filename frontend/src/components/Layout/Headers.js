@@ -103,7 +103,7 @@ const Header = () => {
                 <SearchBar />
               </div>
               <div className="flex sm:gap-48">
-                <div className="block 2xl:ml-96 xl:ml-72 lg:ml-64 md:ml-32 xs:ml-0 -ml-7 mt-3 justify-end items-end">
+                <div className="block 2xl:ml-96 xl:ml-72 lg:ml-64 md:ml-32 xs:-ml-2 -ml-7 mt-3 justify-end items-end">
                   {!auth?.user ? (
                     <ul className="flex space-x-4">
                       <>
