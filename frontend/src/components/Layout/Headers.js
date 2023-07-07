@@ -70,7 +70,7 @@ const Header = () => {
   return (
     <>
       <nav className="fixed z-50 shadow-2xl w-full">
-        <div className=" w-full bg-[#7570ff] px-2 sm:px-6 lg:px-8">
+        <div className="w-full bg-[#7570ff] px-2 sm:px-1 lg:px-8">
           <div className="relative h-16 grid grid-cols-3">
             <div className="flex">
               {/* <!-- Mobile menu button--> */}
@@ -83,8 +83,14 @@ const Header = () => {
                 aria-expanded="false">
                 <UilBars className="text-white" />
               </button>
-              <div className="flex ml-6">
+              <div className="flex ml-6 sm:ml-1">
                 <Link to="/">
+
+                  <img
+                    className="h-10 my-5 w-auto lg:hidden mt-3 lg:mt-3 md:ml-6"
+                    src="https://static.businessworld.in/article/article_extra_large_image/1658825089_3Aa6Ht_Untitled_design_2022_07_26T141419_811.png"
+                    alt="Cybrom"
+                  />
                   <img
                     className="hidden h-10 my-5 w-auto lg:block mt-0 lg:mt-3"
                     src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/Untitled_design_4_b9722293-e450-46e8-b3a7-831120ba3755_200x@2x.png?v=1659015863"
@@ -96,95 +102,29 @@ const Header = () => {
             <div className="mt-3">
               <SearchBar />
             </div>
-            <div className="flex sm:items-stretch sm:gap-48">
-              <div className="sm:block md:ml-64 mt-3">
+            <div className="flex sm:gap-48">
+              <div className="sm:block lg:ml-64 md:ml-32 mt-3">
                 {!auth?.user ? (
                   <ul className="flex space-x-4">
                     <>
                       <li className="shadow-2xl">
                         <NavLink to={'/cart'}>
                           <UilShoppingCartAlt
-                            onClick={toggleMenu}
                             className="cursor-pointer text-white w-8 h-8 shadow-2xl"
                           />
                         </NavLink>
                       </li>
                       <li className="sm:ml-10">
-                        <UilHeart
-                          onClick={toggleMenu}
-                          className="cursor-pointer text-white w-8 h-8"
-                        />
+                        <Link to="/mywishlist">
+                          <UilHeart
+                            className="cursor-pointer text-white w-8 h-8"
+                          />
+                        </Link>
                       </li>
                       <li className="sm:ml-20 float-left">
                         <Link to="/account/profile">
                           <UilUser className="cursor-pointer text-white w-8 h-8" />
                         </Link>
-                        <div className="relative" id="userPopup">
-                          {isOpen && (
-                            <div className="absolute bg-gradient-to-tr from-blue-100 to-blue-900 p-2 w-64 text-[#0f0333]  top-full -left-52 py-6  mt-4 rounded-md shadow-xl">
-                              <div class="max-w-xs">
-                                <div class=" bg-transparent shadow-xl rounded-lg py-3">
-                                  <div class="photo-wrapper p-2">
-                                    <img
-                                      class="w-32 h-32 rounded-full mx-auto"
-                                      src="https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp"
-                                      alt="John Doe"
-                                    />
-                                  </div>
-                                  <div class="p-2">
-                                    <div class="text-center text-gray-900 text-xs font-semibold">
-                                      <p className="text-white">Web Developer</p>
-                                    </div>
-                                    <h3 class="text-center text-sm text-white font-medium leading-8">
-                                      Suresh Kumar Ji
-                                    </h3>
-                                    <h2 class="text-center text-sm text-white font-medium leading-8">
-                                      sureshkumar@gmail.com
-                                    </h2>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="mt-2 border-b border-black">
-                                <a
-                                  href="Profile"
-                                  className=" gap-2 py-1 flex  hover:bg-gray-200 "
-                                >
-                                  <UilUserCircle /> Profile
-                                </a>
-                                <a
-                                  href="Setting"
-                                  className="gap-2 py-1 flex  hover:bg-gray-200 "
-                                >
-                                  <UilCreateDashboard />
-                                  Go To Dashboard
-                                </a>
-                                <a
-                                  href="/signout"
-                                  className="gap-2 py-1 flex hover:bg-gray-200 "
-                                >
-                                  <UilUsersAlt /> Switch Account
-                                </a>
-                                <Link to="/Login" className="gap-2 py-1 flex hover:bg-gray-200">
-                                  <UilSignOutAlt /> Sign Out
-                                </Link>
-                              </div>
-                              <div className="border-b border-black">
-                                <a
-                                  href="/help"
-                                  className="gap-2 py-1 flex hover:bg-gray-200 "
-                                >
-                                  <UilFolderQuestion /> Help
-                                </a>
-                                <a
-                                  href="/help"
-                                  className="gap-2 py-1 flex hover:bg-gray-200 "
-                                >
-                                  <UilSetting /> Setting
-                                </a>
-                              </div>
-                            </div>
-                          )}
-                        </div>
                       </li>
                     </>
                   </ul>
@@ -217,13 +157,13 @@ const Header = () => {
                       auth.user && auth.user.role === "user" && <>
                         <NavLink to={'/cart'}>
                           <li className="shadow-2xl">
-                            {cart.length ? 
-                            <>
-                            <div class="absolute animate-ping  inline-flex items-center pulse  justify-center w-4 h-4 text-xs font-medium text-white bg-red-600 rounded-full left-[67.1rem] top-[10px]"></div>
-                            <div class="absolute inline-flex items-center pulse  justify-center w-5 h-5 text-xs font-medium text-white bg-red-600 rounded-full left-[67rem] top-2">
-                              {cart?.length}
-                            </div></> 
-                            :
+                            {cart.length ?
+                              <>
+                                <div class="absolute animate-ping  inline-flex items-center pulse  justify-center w-4 h-4 text-xs font-medium text-white bg-red-600 rounded-full left-[67.1rem] top-[10px]"></div>
+                                <div class="absolute inline-flex items-center pulse  justify-center w-5 h-5 text-xs font-medium text-white bg-red-600 rounded-full left-[67rem] top-2">
+                                  {cart?.length}
+                                </div></>
+                              :
                               ''
                             }
                             <UilShoppingCartAlt
@@ -235,9 +175,9 @@ const Header = () => {
                           <li>
                             {wishlist.length ? <>
                               <div class="absolute animate-ping  inline-flex items-center pulse  justify-center w-4 h-4 text-xs font-medium text-white bg-red-600 rounded-full left-[70.4rem] top-[10px]"></div>
-                                <div class="absolute inline-flex items-center pulse  justify-center w-5 h-5 text-xs font-medium text-white bg-red-600 rounded-full left-[70.3rem] top-2">
-                                  {wishlist?.length}
-                                </div></> :
+                              <div class="absolute inline-flex items-center pulse  justify-center w-5 h-5 text-xs font-medium text-white bg-red-600 rounded-full left-[70.3rem] top-2">
+                                {wishlist?.length}
+                              </div></> :
                               ''
                             }
                             <UilHeart

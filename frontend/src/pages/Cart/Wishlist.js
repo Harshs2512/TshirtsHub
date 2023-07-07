@@ -186,12 +186,12 @@ const WishlistPage = () => {
                 )
                     :
                     (
-                        <div className='text-center items-center justify-center -mt-10'>
-                            <img className='w-2/5 ml-[26rem]' src={cartimg} />
-                            <h1 className='text-4xl font-bold tracking-wider'>Your Wishlist Is Empty!</h1>
+                        <div className='text-center items-center justify-center md:-mt-10 mt-10'>
+                            <img className='lg:w-2/5 md:w-2/3 lg:ml-[26rem] xs:ml-0 md:ml-44' src={cartimg} />
+                            <h1 className='md:text-4xl text-2xl font-semibold md:font-bold tracking-wider'>Your Wishlist Is Empty!</h1>
                             <h1 className='text-lg text-gray-500 tracking-wider mt-3'>We are vaiting for you</h1>
                             <Link to='/collections'>
-                                <button type="button" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-lg px-10 py-2.5 text-center mt-3 mx-auto">Shop Now</button>
+                                <button type="button" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-lg lg:px-10 md:px-20 py-2.5 text-center lg:mt-3 mt-10 mx-auto">Shop Now</button>
                             </Link>
                         </div>
                     )

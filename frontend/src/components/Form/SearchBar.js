@@ -36,7 +36,7 @@ const SearchBar = () => {
     return (
         <div>
             <form role="search" onSubmit={handleSubmit}>
-                <div className="relative mb-5 flex w-full flex-wrap items-stretch group:">
+                <div className="relative mb-5 hidden lg:flex md:w-full flex-wrap items-stretch group:">
                     <input
                         id="inputbar"
                         type="search"
@@ -93,7 +93,7 @@ const SearchBar = () => {
                             {results.map((result) => (
                                 <Link to={`/product/${result.slug}`}>
                                     <div key={result.id} className="">
-                                        <img className="w-20" src={`https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/product-photo/${result._id}`} alt={result.title} />
+                                        <img className="w-20" src={`http://localhost:8000/api/v1/product-photo/${result._id}`} alt={result.title} />
                                         <p className="text-gray-800 font-bold ml-5">{result.title}</p>
                                     </div>
                                 </Link>
