@@ -18,7 +18,6 @@ const WishlistPage = () => {
     const navigate = useNavigate()
     const params = useParams();
     const [sizeselect, setSizeselect] = useState();
-    const [quantity, setQuantity] = useState(1);
     const [relatedProducts, setRelatedProducts] = useState([]);
     const [wishlist, setWishlist] = useWishlist();
     const [product, setProduct] = useState();
@@ -30,21 +29,37 @@ const WishlistPage = () => {
     const [newcategory, setNewcategory] = useState()
     const [newtitle, setNewtitle] = useState()
     const [newcolor, setNewcolor] = useState()
-    const [newsize, setNewsize] = useState(null, '.......')
+    const [newsize, setNewsize] = useState([])
     const [newid, setNewid] = useState()
     const [newselling_price, setNewsetSelli] = useState()
     const [newdescription, setNewdescription] = useState()
     const [newdicounted_price, setNewdicounted_price] = useState()
+    const [quantity, setQuantity] = useState([]);
 
-    console.log(wishlist)
+    console.log(quantity)
 
-    const decreaseQuantity = () => {
-        if (quantity > 1) {
-            setQuantity(quantity - 1);
-        }
+    useEffect(() => {
+        // Initialize the quantity state with default values
+        const initialQuantity = wishlist.map(() => ({ quantity: 1, size: null }));
+        setQuantity(initialQuantity);
+    }, [wishlist]);
+
+    const decreaseQuantity = (index) => {
+        setQuantity((prevQuantity) => {
+            const updatedQuantity = [...prevQuantity];
+            if (updatedQuantity[index].quantity > 1) {
+                updatedQuantity[index].quantity -= 1;
+            }
+            return updatedQuantity;
+        });
     };
-    const increaseQuantity = () => {
-        setQuantity(quantity + 1);
+
+    const increaseQuantity = (index) => {
+        setQuantity((prevQuantity) => {
+            const updatedQuantity = [...prevQuantity];
+            updatedQuantity[index].quantity += 1;
+            return updatedQuantity;
+        });
     };
 
     //getProduct
@@ -52,7 +67,6 @@ const WishlistPage = () => {
         try {
             const { data } = await axios.get('https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/products');
             setProduct(data.products);
-            // getSimilarProduct(data?.product._id, data?.product.category._id);
         } catch (error) {
             console.log(error);
         }
@@ -90,6 +104,17 @@ const WishlistPage = () => {
     }
 
     console.log(updatedProduct)
+
+    const handleSizeSelect = (index, size) => {
+        console.log(size)
+        setNewquantity((prevQuantity) => {
+            const updatedQuantity = [...prevQuantity];
+            updatedQuantity[index].size = size;
+            console.log(updatedQuantity)
+            return updatedQuantity;
+
+        });
+    };
 
     const handleAddToCart = () => {
         console.log("afdadadfasdads ")
@@ -132,41 +157,44 @@ const WishlistPage = () => {
             <ToastContainer />
             <div className='pt-20 py-5'>
                 {wishlist.length ? (
-                    <div className='grid grid-cols-4 py-2 px-5 gap-x-10'>
-                        {wishlist && wishlist.map((p) => (
-                            <div>
+                    <div className='grid lg:grid-cols-4 grid-cols-2 py-2 md:px-5 px-2 md:gap-x-10 gap-x-2 '>
+                        {wishlist && wishlist.map((p, index) => (
+                            <div className='overflow-hidden overflow-y-hidden'>
                                 <div className='border border-gray-300 mb-1 shadow-[0_4px_9px_-4px_#3b71ca]'>
-                                    <button className="absolute rounded-full w-10 h-10 p-2 bg-gray-200/50 ml-56 mt-3 hover:bg-white duration-200 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+                                    <button className="relative rounded-full w-9 h-9 p-1.5 bg-gray-200/50 top-[10%] xs:left-[72%] sm:left-[78%] left-[70%] hover:bg-white duration-200 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] z-10 "
                                         onClick={() => { removeCartItem(p._id) }}
                                     >
                                         <UilTimes />
                                     </button>
-                                    <img src={`https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/product-photo/${p._id}`} className='w-full h-auto'></img>
-                                    <div className='p-2'>
-                                        <div className='flex'>
-                                            <p className='text-stone-800 font-bold'>{p.title}</p>
-                                            <p className='text-blue-800 font-medium ml-40'>₹{p.selling_price}</p>
+                                    <img
+                                        className="object-cover transition-transform duration-300 transform hover:scale-125 hover:rotate-6 -mt-10 w-80 h-80 bg-gray-500"
+                                        src={`http://localhost:8000/api/v1/product-photo/${p._id}`}
+                                        alt="" />
+                                    <div className='p-2 bg-white overflow-hidden relative'>
+                                        <div className='grid grid-cols-2'>
+                                            <p className='text-stone-800 font-bold md:text-lg text-xs'>{p.title}</p>
+                                            <p className='text-blue-800 font-medium text-right '>₹{p.selling_price}</p>
                                         </div>
-                                        <p className='text-gray-400 font-semibold mb-1'>{p.category.catName}</p>
+                                        <p className='text-gray-400 font-semibold mb-1 md:text-lg text-xs'>{p.category.catName}</p>
                                         <hr />
-                                        <div className='mt-3 flex'>
+                                        <div className='mt-3 grid grid-cols-2'>
                                             <div>
-                                                <h1 className='font-bold text-sm text-gray-600 ml-2'>Quantity</h1>
+                                                <h1 className='font-bold md:text-sm text-xs text-gray-600 '>Quantity</h1>
                                                 <div className="flex items-center mt-1">
                                                     <button
-                                                        className="px-2 rounded-l bg-gray-200 hover:bg-gray-300 text-lg"
-                                                        onClick={decreaseQuantity}>-
+                                                        className="px-2 rounded-l bg-gray-200 hover:bg-gray-300 md:text-lg text-xs"
+                                                        onClick={() => decreaseQuantity(index)}>-
                                                     </button>
-                                                    <span className="px-3 py-1 text-lg">{quantity}</span>
+                                                    <span className="md:px-3 px-1 py-1 md:text-lg text-xs">{quantity[index]?.quantity || 1}</span>
                                                     <button
-                                                        className="px-2 rounded-r text-lg bg-gray-200 hover:bg-gray-300"
-                                                        onClick={increaseQuantity}>+
+                                                        className="px-2 rounded-r md:text-lg text-xs bg-gray-200 hover:bg-gray-300"
+                                                        onClick={() => increaseQuantity(index)}>+
                                                     </button>
                                                 </div>
                                             </div>
-                                            <div className='ml-20'>
-                                                <h1 className='font-bold text-sm text-gray-600 mb-2'>Size</h1>
-                                                <Select value={newsize === '.......' ? undefined : newsize} onChange={setNewsize} defaultValue={undefined} className='w-20'>
+                                            <div className='text-right'>
+                                                <h1 className='font-bold md:text-lg text-xs text-gray-600 mb-2'>Size</h1>
+                                                <Select value={newsize === '.......' ? undefined : newsize} onChange={(size) => handleSizeSelect(index, size)} defaultValue={undefined} className='w-20'>
                                                     {p.size[0].split(',').map((size) => (
                                                         <Option key={size}>{size}</Option>
                                                     ))}
@@ -176,7 +204,7 @@ const WishlistPage = () => {
                                     </div>
                                 </div>
                                 {/* <Link to='/cart'> */}
-                                <button type="button" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-20 py-2 text-center mt-3 ml-2"
+                                <button type="button" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm md:px-20 px-8 py-2 text-center mt-3 ml-2"
                                     onClick={handleAddToCart}
                                 >Move to Cart</button>
                                 {/* </Link> */}
@@ -186,13 +214,15 @@ const WishlistPage = () => {
                 )
                     :
                     (
-                        <div className='text-center items-center justify-center md:-mt-10 mt-10'>
-                            <img className='lg:w-2/5 md:w-2/3 lg:ml-[26rem] xs:ml-0 md:ml-44' src={cartimg} />
-                            <h1 className='md:text-4xl text-2xl font-semibold md:font-bold tracking-wider'>Your Wishlist Is Empty!</h1>
-                            <h1 className='text-lg text-gray-500 tracking-wider mt-3'>We are vaiting for you</h1>
-                            <Link to='/collections'>
-                                <button type="button" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-lg lg:px-10 md:px-20 py-2.5 text-center lg:mt-3 mt-10 mx-auto">Shop Now</button>
-                            </Link>
+                        <div className='text-center md:-mt-10'>
+                            <img className='w-88 h-auto lg:ml-[26rem] xs:ml-0 md:ml-44' src={cartimg} />
+                            <div className='block'>
+                                <h1 className='md:text-4xl text-2xl font-semibold md:font-bold tracking-wider'>Your Wishlist Is Empty!</h1>
+                                <h1 className='text-lg text-gray-500 tracking-wider mt-3'>We are vaiting for you</h1>
+                                <Link to='/collections'>
+                                    <button type="button" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-lg px-10 lg:px-10 md:px-20 py-2.5 text-center lg:mt-3 mt-10 mx-auto mb-10">Shop Now</button>
+                                </Link>
+                            </div>
                         </div>
                     )
                 }
@@ -203,4 +233,3 @@ const WishlistPage = () => {
 };
 
 export default WishlistPage;
-

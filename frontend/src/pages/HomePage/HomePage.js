@@ -22,131 +22,115 @@ const HomePage = () => {
           {/* NEW ARRIVALS */}
           <h1 className='text-3xl font-bold tracking-widest text-center py-10 text-[#7570ff] mt-9 uppercase'>New Arrivals</h1>
           <div className='grid md:grid-cols-3 xs:grid-cols-2 lg:grid-cols-4 md:gap-7 gap-1 gap-y-5 px-5'>
-            <div
-              className="block bg-white">
-              <a href="#!">
-                <img
-                  src="3.jpg"
-                  alt="" />
+            <div className='block bg-white relative'>
+              <a href='#!'>
+                <img src='3.jpg' alt='' />
               </a>
-              <div className="rounded-full relative xs:top-[-13.5rem] xs:left-[8.2rem] md:top-[-18.7rem] md:left-[11.6rem] lg:top-[-21.8rem] lg:left-56 md:w-10 md:h-10 w-9 h-9 p-1.5 md:p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+              <div className='rounded-full absolute top-[4%] left-[85%] transform -translate-x-1/2 md:top-[4%] md:left-[85%] md:transform md:-translate-x-1/2 lg:top-[4%] lg:left-[85%] lg:transform lg:-translate-x-1/2 md:w-10 md:h-10 w-9 h-9 p-1.5 md:p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]'>
                 <UilHeartAlt />
               </div>
-              <div className="px-2 py-3 -mt-10">
-                <h5
-                  className="mb-2 md:text-lg text-md font-medium leading-tight text-neutral-800">
+              <div className='px-2 py-3 mt-1'>
+                <h5 className='mb-2 md:text-lg text-md font-medium leading-tight text-neutral-800'>
                   Tshirt title
                 </h5>
-                <p className="mb-1 md:text-lg text-sm text-neutral-600">
+                <p className='mb-1 md:text-lg text-sm text-neutral-600'>
                   TShirt
                 </p>
                 <hr />
               </div>
               <div className='flex px-2'>
-                <p className="mb-2 text-base font-bold text-neutral-900">
+                <p className='mb-2 text-base font-bold text-neutral-900'>
                   ₹ 599
                 </p>
-                <p className="mt-1 ml-4 font-semibold text-sm line-through text-gray-400">
+                <p className='mt-1 ml-4 font-semibold text-sm line-through text-gray-400'>
                   ₹ 999
                 </p>
-                <p className="ml-4 font-semibold text-base text-green-500">
+                <p className='ml-4 font-semibold text-base text-green-500'>
                   20%
                 </p>
               </div>
             </div>
-            {/* ---------------- */}<div
-              className="block bg-white">
-              <a href="#!">
-                <img
-                  src="3.jpg"
-                  alt="" />
+            {/* ---------------- */}<div className='block bg-white relative'>
+              <a href='#!'>
+                <img src='3.jpg' alt='' />
               </a>
-              <div className="rounded-full relative xs:top-[-13.5rem] xs:left-[8.2rem] md:top-[-18.7rem] md:left-[11.6rem] lg:top-[-21.8rem] lg:left-56 md:w-10 md:h-10 w-9 h-9 p-1.5 md:p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+              <div className='rounded-full absolute top-[4%] left-[85%] transform -translate-x-1/2 md:top-[4%] md:left-[85%] md:transform md:-translate-x-1/2 lg:top-[4%] lg:left-[85%] lg:transform lg:-translate-x-1/2 md:w-10 md:h-10 w-9 h-9 p-1.5 md:p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]'>
                 <UilHeartAlt />
               </div>
-              <div className="px-2 py-3 -mt-10">
-                <h5
-                  className="mb-2 md:text-lg text-md font-medium leading-tight text-neutral-800">
+              <div className='px-2 py-3 mt-1'>
+                <h5 className='mb-2 md:text-lg text-md font-medium leading-tight text-neutral-800'>
                   Tshirt title
                 </h5>
-                <p className="mb-1 md:text-lg text-sm text-neutral-600">
+                <p className='mb-1 md:text-lg text-sm text-neutral-600'>
                   TShirt
                 </p>
                 <hr />
               </div>
               <div className='flex px-2'>
-                <p className="mb-2 text-base font-bold text-neutral-900">
+                <p className='mb-2 text-base font-bold text-neutral-900'>
                   ₹ 599
                 </p>
-                <p className="mt-1 ml-4 font-semibold text-sm line-through text-gray-400">
+                <p className='mt-1 ml-4 font-semibold text-sm line-through text-gray-400'>
                   ₹ 999
                 </p>
-                <p className="ml-4 font-semibold text-base text-green-500">
+                <p className='ml-4 font-semibold text-base text-green-500'>
                   20%
                 </p>
               </div>
             </div>
             {/* ----------------------- */}
-            <div
-              className="block bg-white">
-              <a href="#!">
-                <img
-                  src="3.jpg"
-                  alt="" />
+            <div className='block bg-white relative'>
+              <a href='#!'>
+                <img src='3.jpg' alt='' />
               </a>
-              <div className="rounded-full relative xs:top-[-13.5rem] xs:left-[8.2rem] md:top-[-18.7rem] md:left-[11.6rem] lg:top-[-21.8rem] lg:left-56 md:w-10 md:h-10 w-9 h-9 p-1.5 md:p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+              <div className='rounded-full absolute top-[4%] left-[85%] transform -translate-x-1/2 md:top-[4%] md:left-[85%] md:transform md:-translate-x-1/2 lg:top-[4%] lg:left-[85%] lg:transform lg:-translate-x-1/2 md:w-10 md:h-10 w-9 h-9 p-1.5 md:p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]'>
                 <UilHeartAlt />
               </div>
-              <div className="px-2 py-3 -mt-10">
-                <h5
-                  className="mb-2 md:text-lg text-md font-medium leading-tight text-neutral-800">
+              <div className='px-2 py-3 mt-1'>
+                <h5 className='mb-2 md:text-lg text-md font-medium leading-tight text-neutral-800'>
                   Tshirt title
                 </h5>
-                <p className="mb-1 md:text-lg text-sm text-neutral-600">
+                <p className='mb-1 md:text-lg text-sm text-neutral-600'>
                   TShirt
                 </p>
                 <hr />
               </div>
               <div className='flex px-2'>
-                <p className="mb-2 text-base font-bold text-neutral-900">
+                <p className='mb-2 text-base font-bold text-neutral-900'>
                   ₹ 599
                 </p>
-                <p className="mt-1 ml-4 font-semibold text-sm line-through text-gray-400">
+                <p className='mt-1 ml-4 font-semibold text-sm line-through text-gray-400'>
                   ₹ 999
                 </p>
-                <p className="ml-4 font-semibold text-base text-green-500">
+                <p className='ml-4 font-semibold text-base text-green-500'>
                   20%
                 </p>
               </div>
             </div>
-            <div
-              className="block bg-white">
-              <a href="#!">
-                <img
-                  src="3.jpg"
-                  alt="" />
+            <div className='block bg-white relative'>
+              <a href='#!'>
+                <img src='3.jpg' alt='' />
               </a>
-              <div className="rounded-full relative xs:top-[-13.5rem] xs:left-[8.2rem] md:top-[-18.7rem] md:left-[11.6rem] lg:top-[-21.8rem] lg:left-56 md:w-10 md:h-10 w-9 h-9 p-1.5 md:p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+              <div className='rounded-full absolute top-[4%] left-[85%] transform -translate-x-1/2 md:top-[4%] md:left-[85%] md:transform md:-translate-x-1/2 lg:top-[4%] lg:left-[85%] lg:transform lg:-translate-x-1/2 md:w-10 md:h-10 w-9 h-9 p-1.5 md:p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]'>
                 <UilHeartAlt />
               </div>
-              <div className="px-2 py-3 -mt-10">
-                <h5
-                  className="mb-2 md:text-lg text-md font-medium leading-tight text-neutral-800">
+              <div className='px-2 py-3 mt-1'>
+                <h5 className='mb-2 md:text-lg text-md font-medium leading-tight text-neutral-800'>
                   Tshirt title
                 </h5>
-                <p className="mb-1 md:text-lg text-sm text-neutral-600">
+                <p className='mb-1 md:text-lg text-sm text-neutral-600'>
                   TShirt
                 </p>
                 <hr />
               </div>
               <div className='flex px-2'>
-                <p className="mb-2 text-base font-bold text-neutral-900">
+                <p className='mb-2 text-base font-bold text-neutral-900'>
                   ₹ 599
                 </p>
-                <p className="mt-1 ml-4 font-semibold text-sm line-through text-gray-400">
+                <p className='mt-1 ml-4 font-semibold text-sm line-through text-gray-400'>
                   ₹ 999
                 </p>
-                <p className="ml-4 font-semibold text-base text-green-500">
+                <p className='ml-4 font-semibold text-base text-green-500'>
                   20%
                 </p>
               </div>
@@ -200,71 +184,60 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className=''>
-          {/* circle design */}
-          <h1 className='text-3xl font-bold tracking-widest text-center md:pt-10 text-[#7570ff] uppercase'>our service</h1>
-          <section className='xs:mt-6 md:mt-10'>
-            <div className="md:flex flex-wrap justify-center px-20 gap-20 ml-9">
-              <div className="md:flex gap-y-10 justify-center rotate-[45deg] rounded-full md:rotate-[-45deg] md:w-[200px] md:h-[200px] border-solid border-[15px] w-[10rem] h-[10rem] mb-3" 
-              >
-                <div
-                  className="rounded-full rotate-[-45deg] md:rotate-[45deg] bg-white w-[8.5rem] h-[8.5rem] md:w-[170px] md:h-[170px] flex justify-center shadow-2xl xs:-mt-1 xs:-ml-1 md:mt-[0.1em]">
-                  <div
-                    className="rounded-full rotate-[0deg] md:rotate-[0deg] bg-white md:w-[150px] md:h-[150px] w-[7.5rem] h-[7.5rem] flex justify-center md:mt-[10px] xs:mt-2 shadow-[inset_0_-2px_6px_0px_rgba(0,0,0,0.6)]">
-                    <p className="font-bold  bg-white md:mt-8 mt-5 mb-5 md:text-[20px] text-md">
-                      SELECT <UilSearchAlt className="w-9 h-9 xs:ml-2.5 md:ml-4 mt-5 text-[#5c58e0]" />
-                    </p>
+        <div className="flex justify-center items-center">
+          <div className="">
+            {/* circle design */}
+            <h1 className="text-3xl font-bold tracking-widest text-center md:pt-10 text-[#7570ff] uppercase">our service</h1>
+            <section className="mt-20">
+              <div className="flex flex-wrap justify-center items-center gap-20">
+                <div className="gap-y-10 justify-center rounded-full md:w-[200px] md:h-[200px] border-solid border-[15px] w-[10rem] h-[10rem] mb-3">
+                  <div className="rounded-full bg-white w-[8.5rem] h-[8.5rem] md:w-[170px] md:h-[170px] flex justify-center shadow-2xl xs:-mt-1 xs:-ml-1 md:mt-[0.1em]">
+                    <div className="rounded-full rotate-[0deg] md:rotate-[0deg] bg-white md:w-[150px] md:h-[150px] w-[7.5rem] h-[7.5rem] flex justify-center md:mt-[10px] xs:mt-2 shadow-[inset_0_-2px_6px_0px_rgba(0,0,0,0.6)]">
+                      <p className="font-bold bg-white md:mt-8 mt-5 mb-5 md:text-[20px] text-md">
+                        SELECT <UilSearchAlt className="w-9 h-9 xs:ml-2.5 md:ml-4 mt-5 text-[#5c58e0]" />
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
+                {/* CIRCUL SECTION-2 */}
+
+                <div className="gap-y-10 justify-center rounded-full md:w-[200px] md:h-[200px] border-solid border-[15px] w-[10rem] h-[10rem] mb-3">
+                  <div className="rounded-full bg-white w-[8.5rem] h-[8.5rem] md:w-[170px] md:h-[170px] flex justify-center shadow-2xl xs:-mt-1 xs:-ml-1 md:-ml-1 md:mt-[0.1em]">
+                    <div className="rounded-full rotate-[0deg] md:rotate-[0deg] bg-white md:w-[150px] md:h-[150px] w-[7.5rem] h-[7.5rem] flex justify-center md:mt-[10px] xs:mt-2 shadow-[inset_0_-2px_6px_0px_rgba(0,0,0,0.6)]">
+                      <p className="font-bold bg-white md:mt-8 mt-5 mb-5 md:text-[20px] text-md">
+                        CART <UilShoppingCartAlt className="w-9 h-9 xs:ml-1 md:ml-2 mt-5 text-[#5c58e0]" />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* CIRCUL SECTION-3  */}
+
+                <div className="gap-y-10 justify-center rounded-full md:rotate-[-45deg] md:w-[200px] md:h-[200px] border-solid border-[15px] w-[10rem] h-[10rem] mb-3">
+                  <div className="rounded-full bg-white w-[8.5rem] h-[8.5rem] md:w-[170px] md:h-[170px] flex justify-center shadow-2xl xs:-mt-1 xs:-ml-1 md:mt-[0.1em]">
+                    <div className="rounded-full bg-white md:w-[150px] md:h-[150px] w-[7.5rem] h-[7.5rem] flex justify-center md:mt-[10px] xs:mt-2 shadow-[inset_0_-2px_6px_0px_rgba(0,0,0,0.6)]">
+                      <p className="font-bold bg-white mt-8 mb-7 md:text-[20px] text-md">
+                        CHECKOUT <UilCheckCircle className="w-9 h-9 xs:ml-6 md:ml-8 md:mt-5 mt-3 text-[#5c58e0]" />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* CIRCUL SECTION-4 */}
+
+                <div className="gap-y-10 justify-center rounded-full md:rotate-[-45deg] md:w-[200px] md:h-[200px] border-solid border-[15px] w-[10rem] h-[10rem]">
+                  <div className="rounded-full bg-white w-[8.5rem] h-[8.5rem] md:w-[170px] md:h-[170px] flex justify-center shadow-2xl xs:-mt-1 xs:-ml-1 md:mt-[0.1em]">
+                    <div className="rounded-full bg-white md:w-[150px] md:h-[150px] w-[7.5rem] h-[7.5rem] flex justify-center md:mt-[10px] xs:mt-2 shadow-[inset_0_-2px_6px_0px_rgba(0,0,0,0.6)]">
+                      <p className="font-bold bg-white mt-8 mb-7 md:text-[20px] text-md">
+                        DELIVERED <UilTruck className="w-9 h-9 xs:ml-6 md:ml-9 md:mt-5 mt-3 text-[#5c58e0]" />
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-
-              {/* CIRCUL SECTION-2 */}
-
-              <div className="md:flex gap-y-10 justify-center rotate-[45deg] rounded-full md:rotate-[-45deg] md:w-[200px] md:h-[200px] border-solid border-[15px] w-[10rem] h-[10rem] mb-3"
-              >
-                <div
-                  className="rounded-full rotate-[-45deg] md:rotate-[45deg] bg-white w-[8.5rem] h-[8.5rem] md:w-[170px] md:h-[170px] flex justify-center shadow-2xl xs:-mt-1 xs:-ml-1 md:-ml-1 md:mt-[0.1em]">
-                  <div
-                    className="rounded-full rotate-[0deg] md:rotate-[0deg] bg-white md:w-[150px] md:h-[150px] w-[7.5rem] h-[7.5rem] flex justify-center md:mt-[10px] xs:mt-2 shadow-[inset_0_-2px_6px_0px_rgba(0,0,0,0.6)]">
-                    <p className="font-bold  bg-white md:mt-8 mt-5 mb-5 md:text-[20px] text-md">
-                      CART <UilShoppingCartAlt className="w-9 h-9 xs:ml-1 md:ml-2 mt-5 text-[#5c58e0]" />
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* CIRCUL SECTION-3  */}
-
-              <div className="md:flex gap-y-10 justify-center rotate-[45deg] rounded-full md:rotate-[-45deg] md:w-[200px] md:h-[200px] border-solid border-[15px] w-[10rem] h-[10rem] mb-3"
-              >
-                <div
-                  className="rounded-full rotate-[-45deg] md:rotate-[45deg] bg-white w-[8.5rem] h-[8.5rem] md:w-[170px] md:h-[170px] flex justify-center shadow-2xl xs:-mt-1 xs:-ml-1 md:mt-[0.1em]">
-                  <div
-                    className="rounded-full rotate-[0deg] md:rotate-[0deg] bg-white md:w-[150px] md:h-[150px] w-[7.5rem] h-[7.5rem] flex justify-center md:mt-[10px] xs:mt-2 shadow-[inset_0_-2px_6px_0px_rgba(0,0,0,0.6)]">
-                    <p className="font-bold  bg-white mt-8 mb-7 md:text-[20px] text-md">
-                      CHECKOUT <UilCheckCircle className="w-9 h-9 xs:ml-6 md:ml-8 md:mt-5 mt-3 text-[#5c58e0]" />
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* CIRCUL SECTION-4 */}
-
-              <div className="md:flex gap-y-10 justify-center rotate-[45deg] rounded-full md:rotate-[-45deg] md:w-[200px] md:h-[200px] border-solid border-[15px] w-[10rem] h-[10rem]"
-              >
-                <div
-                  className="rounded-full rotate-[-45deg] md:rotate-[45deg] bg-white w-[8.5rem] h-[8.5rem] md:w-[170px] md:h-[170px] flex justify-center shadow-2xl xs:-mt-1 xs:-ml-1 md:mt-[0.1em]">
-                  <div
-                    className="rounded-full rotate-[0deg] md:rotate-[0deg] bg-white md:w-[150px] md:h-[150px] w-[7.5rem] h-[7.5rem] flex justify-center md:mt-[10px] xs:mt-2 shadow-[inset_0_-2px_6px_0px_rgba(0,0,0,0.6)]">
-                    <p className="font-bold bg-white mt-8 mb-7 md:text-[20px] text-md">
-                      DELEVERED <UilTruck className="w-9 h-9 xs:ml-6 md:ml-9 md:mt-5 mt-3 text-[#5c58e0]" />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
         <div className='mt-20'>
           <h1 className='text-3xl font-bold tracking-widest text-center py-10 text-[#7570ff] mt-9 uppercase'>categories</h1>
