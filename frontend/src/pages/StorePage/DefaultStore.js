@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import { UilHeartAlt } from '@iconscout/react-unicons'
+import { Link, useParams } from 'react-router-dom'
+import { UilHeartAlt, UilFilter, UilSort } from '@iconscout/react-unicons'
 import Layout from '../../components/Layout/Layout'
-import { Checkbox, Radio } from 'antd'
+import { Checkbox, Radio, Spin } from 'antd'
 import axios from 'axios'
 import { Prices } from "./Price";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
@@ -28,6 +28,9 @@ const DefaultStore = () => {
     const [filterCheck, setFilterCheck] = useState(false);
     const [wishlist, setWishlist] = useWishlist();
     const [liked, setLiked] = useState(false);
+    const [isFilter, setIsFilter] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const param = useParams()
 
     const handleDropdownToggle = () => {
         setIsDropdownOpen(!isDropdownOpen);
@@ -106,7 +109,7 @@ const DefaultStore = () => {
         setChecked(all);
         setFilter1(filter1);
     };
-    
+
     const handleSizeFilter = (value, id, sz, isSize) => {
         let all = [...checked];
         let filter1 = [...filterList];
@@ -158,6 +161,7 @@ const DefaultStore = () => {
 
     //get filterd product
     const filterProduct = async () => {
+        setLoading(true)
         try {
             const { data } = await axios.post("https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/product-filters", {
                 checked,
@@ -168,7 +172,7 @@ const DefaultStore = () => {
             setProducts(data?.products);
             setFilterCheck(false);
             console.log(products)
-
+            setLoading(false)
         } catch (error) {
             console.log(error);
         }
@@ -200,7 +204,6 @@ const DefaultStore = () => {
     const size = {
         sizes: ['S', 'M', 'L', 'XL', 'XXL']
     }
-
     return (
         <Layout title={"DefaultStore"}>
             <ToastContainer />
@@ -469,7 +472,7 @@ const DefaultStore = () => {
 
                                                 <img
                                                     className="object-cover transition-transform duration-300 transform hover:scale-125 hover:rotate-6 -mt-10 w-80 h-80 bg-gray-500"
-                                                    src={`http://localhost:8000/api/v1/product-photo/${p._id}`}
+                                                    src={`https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/product-photo/${p._id}`}
                                                     alt="" />
                                                 <div className='px-2 py-3 mt-1 overflow-hidden relative bg-white'>
                                                     <h5 className='mb-1 md:text-lg text-md font-medium leading-tight text-neutral-800'>

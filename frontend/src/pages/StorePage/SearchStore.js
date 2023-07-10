@@ -461,7 +461,7 @@ const SearchStore = () => {
 
                                                 <img
                                                     className="object-cover transition-transform duration-300 transform hover:scale-125 hover:rotate-6 -mt-10 w-80 h-80 bg-gray-500"
-                                                    src={`http://localhost:8000/api/v1/product-photo/${p._id}`}
+                                                    src={`https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/product-photo/${p._id}`}
                                                     alt="" />
                                                 <div className='px-2 py-3 mt-1 overflow-hidden relative bg-white'>
                                                     <h5 className='mb-1 md:text-lg text-md font-medium leading-tight text-neutral-800'>
