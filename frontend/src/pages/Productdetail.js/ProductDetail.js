@@ -115,28 +115,28 @@ const ProductDetail = () => {
     return (
         <Layout title="productdelail">
             <ToastContainer />
-            <div className='grid grid-cols-8 pt-16 px-5'>
-                <div className='grid-flow-col-dense gap-10 mt-5 h-[calc(100vh-0px)] overflow-y-auto scrollbar-hide'>
-                    <div className='w-20 h-28 m-5 ml-5'>
+            <div className='grid lg:grid-cols-8 grid-rows-8 pt-16 px-5'>
+                <div className='grid grid-flow-col-dense lg:grid-flow-row-dense lg:order-1 order-2 mt-5 lg:h-[calc(100vh-0px)] lg:overflow-y-auto overflow-x-auto scrollbar-hide'>
+                    <div className='lg:w-20 lg:h-28 w-32 m-3 lg:ml-5 ml-0'>
                         <img src='https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSD3593-01-3212350_720x.jpg?v=1686895093' />
                     </div>
-                    <div className='w-20 h-28 m-5 ml-5'>
+                    <div className='lg:w-20 lg:h-28 w-32 m-3 lg:ml-5 ml-0'>
                         <img src='https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSD3593-01-3212350_720x.jpg?v=1686895093' />
                     </div>
-                    <div className='w-20 h-28 m-5 ml-5'>
+                    <div className='lg:w-20 lg:h-28 w-32 m-3 lg:ml-5 ml-0'>
                         <img src='https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSD3593-01-3212350_720x.jpg?v=1686895093' />
                     </div>
-                    <div className='w-20 h-28 m-5 ml-5'>
+                    <div className='lg:w-20 lg:h-28 w-32 m-3 lg:ml-5 ml-0'>
                         <img src='https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSD3593-01-3212350_720x.jpg?v=1686895093' />
                     </div>
-                    <div className='w-20 h-28 m-5 ml-5'>
+                    <div className='lg:w-20 lg:h-28 w-32 m-3 lg:ml-5 ml-0'>
                         <img src='https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSD3593-01-3212350_720x.jpg?v=1686895093' />
                     </div>
-                    <div className='w-20 h-28 m-5 ml-5'>
+                    <div className='lg:w-20 lg:h-28 w-32 m-3 lg:ml-5 ml-0'>
                         <img src='https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSD3593-01-3212350_720x.jpg?v=1686895093' />
                     </div>
                 </div>
-                <div className='col-span-3 m-5'>
+                <div className='lg:col-span-3 row-span-3 m-5 lg:order-2 order-1'>
                     <TransformWrapper
                         initialScale={1}
                         initialPositionX={0}
@@ -146,40 +146,40 @@ const ProductDetail = () => {
                             <React.Fragment>
                                 <div className="tools grid grid-cols-3">
                                     <button onClick={() => zoomIn()}>
-                                        <div className='w-10 h-10 bg-blue-400/50 rounded-full absolute z-10 left-[17rem] text-2xl font-extrabold text-white top-[41rem]'>
+                                        <div className="w-10 h-10 bg-blue-400/50 rounded-full absolute z-10 left-[8rem] lg:left-[20rem] xs:transform xs:-translate-x-1/2 -translate-y-1/2 lg:top-[35rem] top-[27rem] text-2xl font-extrabold text-white">
                                             +
                                         </div>
                                     </button>
                                     <button onClick={() => resetTransform()}>
-                                        <div className='w-10 h-10 bg-blue-400/50 rounded-full absolute z-10 left-[23.7rem] text-center text-2xl font-extrabold text-white pt-2 pl-2 top-[41rem]'>
+                                        <div className="w-10 h-10 bg-blue-400/50 rounded-full absolute z-10 left-[12rem] lg:left-[24rem] transform -translate-x-1/2 lg:top-[23.4em] top-[27rem] text-2xl font-extrabold text-white p-2">
                                             <UilRedo />
                                         </div>
                                     </button>
                                     <button onClick={() => zoomOut()}>
-                                        <div className='w-10 h-10 bg-blue-400/50 rounded-full absolute z-10 text-center left-[30rem] text-2xl font-extrabold text-white top-[41rem]'>
+                                        <div className="w-10 h-10 bg-blue-400/50 rounded-full absolute z-10 left-[16rem] lg:left-[28rem] transform -translate-x-1/2 lg:top-[35rem] top-[27rem] text-2xl font-extrabold text-white">
                                             -
                                         </div>
                                     </button>
                                 </div>
                                 <TransformComponent>
-                                    <img src={`https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/product-photo/${product._id}`} alt="(test)" />
+                                    <img src={`http://localhost:8000/api/v1/product-photo/${product._id}`} alt="(test)" />
                                 </TransformComponent>
                             </React.Fragment>
                         )}
                     </TransformWrapper>
                 </div>
-                <div className='col-span-4 m-8'>
-                    <h1 className='font-lg text-gray-500'>TshirtHub</h1>
-                    <h1 className='font-bold text-gray-900 text-5xl mt-2'>{product && product.title}</h1>
+                <div className='lg:col-span-4 row-span-4 lg:m-8 lg:order-3 order-3 text-center lg:text-left lg:mt-0 mt-16'>
+                    <h1 className='md:font-lg font-medium text-gray-500 text-lg'>TshirtHub</h1>
+                    <h1 className='md:font-bold font-semibold text-gray-900 text-5xl mt-2'>{product && product.title}</h1>
                     <h1 className='font-lg text-gray-500 text-base mt-1'>{product.category && product.category.catName}</h1>
                     <hr className='mt-1' />
-                    <div className='flex mt-5'>
-                        <h1 className='font-lg text-3xl text-gray-800'>{product && product.selling_price}</h1>
+                    <div className='flex mt-5 justify-center lg:justify-start'>
+                        <h1 className='font-lg text-3xl text-gray-800 text-center'>{product && product.selling_price}</h1>
                         <h1 className='font-normal text-xl text-gray-400 line-through ml-5 '>{product && product.discounted_price}</h1>
-                        <h1 className='font-normal text-xl text-red-600 ml-5'>20%</h1>
+                        <h1 className='font-normal text-xl text-red-600 ml-5 text-right'>20%</h1>
                     </div>
                     <div>
-                        <div className='flex mt-8'>
+                        <div className='flex mt-8 justify-center lg:justify-start'>
                             <h1 className='font-bold text-lg text-gray-900'>Select your size: </h1>
                             <Link><h1 className='font-normal text-base text-red-600 ml-3 underline flex' onClick={toggleSizeChart}>Size chart <span className='ml-2'>
                                 <UilChart />
@@ -200,7 +200,7 @@ const ProductDetail = () => {
                                 </div>
                             )}
                         </div>
-                        <div className='mt-4 grid grid-cols-6'>
+                        <div className='mt-4 flex lg:justify-start justify-center'>
                             {product && product.size && product.size[0].split(',').map((s, index) => (
                                 <button
                                     key={index}
@@ -213,83 +213,42 @@ const ProductDetail = () => {
                                     <span>{s}</span>
                                 </button>
                             ))}
+                        </div>
+                    </div>
+                    <div className='grid grid-cols-2'>
+                        <div className='mt-6'>
+                            <h1 className='font-bold text-lg text-gray-900 flex'>Colors: <span className='text-fuchsia-900 lg:first-letter:ml-4 ml-2 uppercase'>{product && product.color}</span></h1>
+                        </div>
+                        <div className='mt-3 lg:block flex '>
+                            <h1 className='font-bold text-lg text-gray-900 lg:mt-1 mt-4'>Quantity:</h1>
+                            <div className="flex items-center mt-3 ml-2 lg:ml-0">
+                                <button
+                                    className="px-3 py-1 rounded-l bg-gray-200 hover:bg-gray-300 text-xl"
+                                    onClick={decreaseQuantity}>-
+                                </button>
+                                <span className="px-3 py-1 text-lg">{quantity}</span>
+                                <button
+                                    className="px-3 py-1 rounded-r text-xl bg-gray-200 hover:bg-gray-300"
+                                    onClick={increaseQuantity}>+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
-                            {/* <button disabled={product.size === 'M' ? false : true}
-                                type="button" className={`text-gray-900 border-2 font-medium rounded-xl text-sm px-4 py-1 mr-2 mb-2 active:bg-primary-700 ${sizeselect === 2 ? 'border-red-900' : 'border-gray-300'}`} onClick={() => handleSizeselect(2)}>
-                                <span className={`${product.size === 'M' ? ' ' : 'line-through'}`}>M</span>
-                            </button>
-                            <button disabled={product.size === 'L' ? false : true}
-                                type="button" className={`text-gray-900 border-2 font-medium rounded-xl text-sm px-4 py-1 mr-2 mb-2 active:bg-primary-700 ${sizeselect === 3 ? 'border-red-900' : 'border-gray-300'}`} onClick={() => handleSizeselect(3)}>
-                                <span className={`${product.size === 'L' ? ' ' : 'line-through'}`}>L</span>
-                            </button>
-                            <button disabled={product.size === 'XL' ? false : true}
-                                type="button" className={`text-gray-900 border-2 font-medium rounded-xl text-sm px-4 py-1 mr-2 mb-2 active:bg-primary-700 ${sizeselect === 4 ? 'border-red-900' : 'border-gray-300'}`} onClick={() => handleSizeselect(4)}>
-                                <span className={`${product.size === 'XL' ? ' ' : 'line-through'}`}>XL</span>
-                            </button>
-                            <button disabled={product.size === 'XXL' ? false : true}
-                                type="button" className={`text-gray-900 border-2 font-medium rounded-xl text-sm px-4 py-1 mr-2 mb-2 active:bg-primary-700 ${sizeselect === 5 ? 'border-red-900' : 'border-gray-300'}`} onClick={() => handleSizeselect(5)}>
-                                <span className={`${product.size === 'XXL' ? ' ' : 'line-through'}`}>XXL</span>
-                            </button> */}
-                        </div>
-                    </div>
-                    <div className='mt-6'>
-                        <h1 className='font-bold text-lg text-gray-900 flex'>Colors: <span className='text-fuchsia-900 ml-5 uppercase'>{product && product.color}</span></h1>
-                        {/* <div className='grid grid-cols-6 mt-5'>
-                            <button onClick={() => handleColorselect(1)}>
-                                <div className={`w-8 h-8 bg-black border-2 ${colorselect === 1 ? 'border-red-700' : 'border-gray-100'} rounded-full`}>
-                                    <Radio.Group></Radio.Group>
-                                </div>
-                            </button>
-                            <button onClick={() => handleColorselect(2)}>
-                                <div className={`w-16 border-2 ${colorselect === 2 ? 'border-red-700' : 'border-gray-100'} `}>
-                                    <img src='https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSD3593-01-3212350_720x.jpg?v=1686895093' />
-                                </div>
-                            </button>
-                            <button onClick={() => handleColorselect(3)}>
-                                <div className={`w-16 border-2 ${colorselect === 3 ? 'border-red-700' : 'border-gray-100'} `}>
-                                    <img src='https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSD3593-01-3212350_720x.jpg?v=1686895093' />
-                                </div>
-                            </button>
-                            <button onClick={() => handleColorselect(4)}>
-                                <div className={`w-16 border-2 ${colorselect === 4 ? 'border-red-700' : 'border-gray-100'} `}>
-                                    <img src='https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSD3593-01-3212350_720x.jpg?v=1686895093' />
-                                </div>
-                            </button>
-                            <button onClick={() => handleColorselect(5)}>
-                                <div className={`w-16 border-2 ${colorselect === 5 ? 'border-red-700' : 'border-gray-100'} `}>
-                                    <img src='https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSD3593-01-3212350_720x.jpg?v=1686895093' />
-                                </div>
-                            </button>
-                        </div> */}
-                    </div>
-                    <div className='mt-3'>
-                        <h1 className='font-bold text-lg text-gray-900'>Quantity:</h1>
-                        <div className="flex items-center mt-3">
-                            <button
-                                className="px-3 py-1 rounded-l bg-gray-200 hover:bg-gray-300 text-xl"
-                                onClick={decreaseQuantity}>-
-                            </button>
-                            <span className="px-3 py-1 text-lg">{quantity}</span>
-                            <button
-                                className="px-3 py-1 rounded-r text-xl bg-gray-200 hover:bg-gray-300"
-                                onClick={increaseQuantity}>+
-                            </button>
-                        </div>
-                    </div>
                     <hr className='mt-5' />
-                    <div className='mt-5 flex'>
+                    <div className='mt-5 lg:flex lg:ml-0 ml-12'>
                         {!cart.find((item) => item._id === product._id) ? (
-                            <button type="button" class="focus:outline-none text-white bg-purple-500 hover:bg-purple-600 focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-[15px] px-16 py-2 mb-2 ml-2 mr-5 flex pt-3"
+                            <button type="button" class="focus:outline-none text-white bg-purple-500 hover:bg-purple-600 focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-[15px] lg:px-16 px-5 py-2 mb-2 ml-2 mr-5 flex pt-3"
                                 onClick={handleAddToCart}
                             ><span className='mr-2'><UilShoppingCart /></span>Add to Cart
                             </button>
                         ) : (
                             <Link to='/cart'>
-                                <button type="button" class="focus:outline-none text-white bg-purple-500 hover:bg-purple-600 focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-[15px] px-16 py-2 mb-2 ml-2 mr-5 flex pt-3"
+                                <button type="button" class="focus:outline-none text-white bg-purple-500 hover:bg-purple-600 focus:ring-4 focus:ring-purple-300 font-medium rounded-full lg:text-[15px] text-lg lg:px-16 px-16 lg:py-3 mb-2 pb-2 ml-2 lg:mr-5 mr-10 flex pt-3"
                                 ><span className='mr-2'><UilShoppingCart /></span>Go To Cart
                                 </button></Link>)}
 
-                        <button disabled={!wishlist.find((item) => item._id === product._id) ? false : true} type="button" class={`text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm py-2.5 text-center mr-2 mb-2 flex ${!wishlist.find((item) => item._id === product._id) ? 'px-16' : 'bg-blue-800 text-white px-12 '}`}
+                        <button disabled={!wishlist.find((item) => item._id === product._id) ? false : true} type="button" class={`text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm py-2.5 text-center mb-5 lg:mt-0 mt-5 flex ${!wishlist.find((item) => item._id === product._id) ? 'px-16' : 'bg-blue-800 text-white px-12 '}`}
                             onClick={() => {
                                 setWishlist([...wishlist, product]);
                                 localStorage.setItem(
@@ -320,19 +279,19 @@ const ProductDetail = () => {
                             </ul>
                         </p>
                     </div>
-                    <div className='mt-5 grid grid-cols-3 text-center text-base text-white bg-purple-800 gap-3 px-5 py-2'>
+                    <div className='mt-5 grid grid-cols-3 text-center lg:text-base text-xs text-white bg-purple-800 gap-3 lg:px-5 px-1 lg:py-2 py-1'>
                         <Link>
-                            <UilDropbox className="w-16 h-16 ml-[55px]" />
+                            <UilDropbox className="md:w-16 md:h-16 w-12 h-12 lg:ml-[55px] ml-[26px]" />
                             <p className='uppercase'>100+</p>
                             <p className='uppercase'>Happy Customers</p>
                         </Link>
                         <Link>
-                            <UilTruck className="w-16 h-16 ml-[55px]" />
+                            <UilTruck className="md:w-16 md:h-16 w-12 h-12 lg:ml-[55px] ml-[26px]" />
                             <p className='uppercase'>Home Delevery</p>
                             <p className='uppercase'>Cash on Delevery</p>
                         </Link>
                         <Link>
-                            <UilProcess className="w-16 h-16 ml-[55px]" />
+                            <UilProcess className="md:w-16 md:h-16 w-12 h-12 lg:ml-[55px] ml-[29px]" />
                             <p className='uppercase'>our</p>
                             <p className='uppercase'>return policy</p>
                         </Link>
@@ -352,7 +311,7 @@ const ProductDetail = () => {
                                 <Link to={`/product/${p.slug}`} >
                                     <img
                                         className="rounded-lg"
-                                        src={`https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/product-photo/${p._id}`}
+                                        src={`http://localhost:8000/api/v1/product-photo/${p._id}`}
                                         alt="" />
                                     <div className="px-3 mt-1">
                                         <h5
