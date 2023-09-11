@@ -146,9 +146,9 @@ const HomePage = () => {
             </Link>
           </div>
         </div>
+        {/* CATEGORIES CARD BANNER*/}
         <div>
-          {/* CATEGORIES CARD BANNER*/}
-          <h1 className='text-3xl font-bold tracking-widest text-center py-10 text-[#7570ff] md:mt-9  uppercase'>categories</h1>
+          <h1 className='text-3xl font-bold tracking-widest text-center py-6 text-[#7570ff] md:mt-9  uppercase'>categories</h1>
           <div className='grid grid-rows-3 px-5 md:gap-5 gap-2'>
             <div className='grid md:grid-cols-3 md:gap-x-7'>
               <div className='col-span-2'>
@@ -184,6 +184,153 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+
+        {/* NEW ARRIVALS */}
+        <h1 className='text-3xl font-bold tracking-widest text-center py-10 text-[#7570ff] uppercase'>New Arrivals</h1>
+        <div className='grid md:grid-cols-3 xs:grid-cols-2 lg:grid-cols-4 md:gap-7 gap-1 gap-y-5 px-5'>
+          <div className='block bg-white relative'>
+            <a href='#!'>
+              <img src='3.jpg' alt='' />
+            </a>
+            <div className='rounded-full absolute top-[4%] left-[85%] transform -translate-x-1/2 md:top-[4%] md:left-[85%] md:transform md:-translate-x-1/2 lg:top-[4%] lg:left-[85%] lg:transform lg:-translate-x-1/2 md:w-10 md:h-10 w-9 h-9 p-1.5 md:p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]'>
+              <UilHeartAlt />
+            </div>
+            <div className='px-2 py-3 mt-1'>
+              <h5 className='mb-2 md:text-lg text-md font-medium leading-tight text-neutral-800'>
+                Tshirt title
+              </h5>
+              <p className='mb-1 md:text-lg text-sm text-neutral-600'>
+                TShirt
+              </p>
+              <hr />
+            </div>
+            <div className='flex px-2'>
+              <p className='mb-2 text-base font-bold text-neutral-900'>
+                ₹ 599
+              </p>
+              <p className='mt-1 ml-4 font-semibold text-sm line-through text-gray-400'>
+                ₹ 999
+              </p>
+              <p className='ml-4 font-semibold text-base text-green-500'>
+                20%
+              </p>
+            </div>
+          </div>
+          {/* ---------------- */}<div className='block bg-white relative'>
+            <a href='#!'>
+              <img src='3.jpg' alt='' />
+            </a>
+            <div className='rounded-full absolute top-[4%] left-[85%] transform -translate-x-1/2 md:top-[4%] md:left-[85%] md:transform md:-translate-x-1/2 lg:top-[4%] lg:left-[85%] lg:transform lg:-translate-x-1/2 md:w-10 md:h-10 w-9 h-9 p-1.5 md:p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]'>
+              <UilHeartAlt />
+            </div>
+            <div className='px-2 py-3 mt-1'>
+              <h5 className='mb-2 md:text-lg text-md font-medium leading-tight text-neutral-800'>
+                Tshirt title
+              </h5>
+              <p className='mb-1 md:text-lg text-sm text-neutral-600'>
+                TShirt
+              </p>
+              <hr />
+            </div>
+            <div className='flex px-2'>
+              <p className='mb-2 text-base font-bold text-neutral-900'>
+                ₹ 599
+              </p>
+              <p className='mt-1 ml-4 font-semibold text-sm line-through text-gray-400'>
+                ₹ 999
+              </p>
+              <p className='ml-4 font-semibold text-base text-green-500'>
+                20%
+              </p>
+            </div>
+          </div>
+          {/* ----------------------- */}
+          <div className='block bg-white relative'>
+            <a href='#!'>
+              <img src='3.jpg' alt='' />
+            </a>
+            <div className='rounded-full absolute top-[4%] left-[85%] transform -translate-x-1/2 md:top-[4%] md:left-[85%] md:transform md:-translate-x-1/2 lg:top-[4%] lg:left-[85%] lg:transform lg:-translate-x-1/2 md:w-10 md:h-10 w-9 h-9 p-1.5 md:p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]'>
+              <UilHeartAlt />
+            </div>
+            <div className='px-2 py-3 mt-1'>
+              <h5 className='mb-2 md:text-lg text-md font-medium leading-tight text-neutral-800'>
+                Tshirt title
+              </h5>
+              <p className='mb-1 md:text-lg text-sm text-neutral-600'>
+                TShirt
+              </p>
+              <hr />
+            </div>
+            <div className='flex px-2'>
+              <p className='mb-2 text-base font-bold text-neutral-900'>
+                ₹ 599
+              </p>
+              <p className='mt-1 ml-4 font-semibold text-sm line-through text-gray-400'>
+                ₹ 999
+              </p>
+              <p className='ml-4 font-semibold text-base text-green-500'>
+                20%
+              </p>
+            </div>
+          </div>
+          <div className='block bg-white relative'>
+            <a href='#!'>
+              <img src='3.jpg' alt='' />
+            </a>
+            <div className='rounded-full absolute top-[4%] left-[85%] transform -translate-x-1/2 md:top-[4%] md:left-[85%] md:transform md:-translate-x-1/2 lg:top-[4%] lg:left-[85%] lg:transform lg:-translate-x-1/2 md:w-10 md:h-10 w-9 h-9 p-1.5 md:p-2 bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]'>
+              <UilHeartAlt />
+            </div>
+            <div className='px-2 py-3 mt-1'>
+              <h5 className='mb-2 md:text-lg text-md font-medium leading-tight text-neutral-800'>
+                Tshirt title
+              </h5>
+              <p className='mb-1 md:text-lg text-sm text-neutral-600'>
+                TShirt
+              </p>
+              <hr />
+            </div>
+            <div className='flex px-2'>
+              <p className='mb-2 text-base font-bold text-neutral-900'>
+                ₹ 599
+              </p>
+              <p className='mt-1 ml-4 font-semibold text-sm line-through text-gray-400'>
+                ₹ 999
+              </p>
+              <p className='ml-4 font-semibold text-base text-green-500'>
+                20%
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Themes CARD BANNER*/}
+        <div>
+          <h1 className='text-3xl font-bold tracking-widest text-center py-10 text-[#7570ff] mt-16  uppercase'>our themes</h1>
+          <div className='grid grid-rows-3 px-5 md:gap-5 gap-2'>
+            <div className='h-60 grid md:grid-cols-3 gap-x-7'>
+              <div className='bg-yellow-800'>
+                <img className='h-80 w-full' src='cropbanner4.jpg' alt='' />
+              </div>
+              <div className='hidden md:block bg-yellow-600'>
+                <img className='h-80 w-full' src='cropbanner5.jpg' alt='' />
+              </div>
+              <div className='hidden md:block bg-yellow-400'>
+                <img className='h-80 w-full' src='cropbanner4.jpg' alt='' />
+              </div>
+            </div>
+            <div className='h-60 grid md:grid-cols-3 gap-x-7 mt-11'>
+              <div className='bg-yellow-800'>
+                <img className='h-80 w-full' src='cropbanner4.jpg' alt='' />
+              </div>
+              <div className='hidden md:block bg-yellow-600'>
+                <img className='h-80 w-full' src='cropbanner5.jpg' alt='' />
+              </div>
+              <div className='hidden md:block bg-yellow-400'>
+                <img className='h-80 w-full' src='cropbanner4.jpg' alt='' />
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="flex justify-center items-center">
           <div className="">
             {/* circle design */}
@@ -193,7 +340,7 @@ const HomePage = () => {
                 <div className="gap-y-10 justify-center rounded-full md:w-[200px] md:h-[200px] border-solid border-[15px] w-[10rem] h-[10rem] mb-3">
                   <div className="rounded-full bg-white w-[8.5rem] h-[8.5rem] md:w-[170px] md:h-[170px] flex justify-center shadow-2xl xs:-mt-1 xs:-ml-1 md:mt-[0.1em]">
                     <div className="rounded-full rotate-[0deg] md:rotate-[0deg] bg-white md:w-[150px] md:h-[150px] w-[7.5rem] h-[7.5rem] flex justify-center md:mt-[10px] xs:mt-2 shadow-[inset_0_-2px_6px_0px_rgba(0,0,0,0.6)]">
-                      <p className="font-bold bg-white md:mt-8 mt-5 mb-5 md:text-[20px] text-md">
+                      <p className="font-bold bg-white md:mt-8 mt-5 mb-5 md:text-[17px] text-md">
                         SELECT <UilSearchAlt className="w-9 h-9 xs:ml-2.5 md:ml-4 mt-5 text-[#5c58e0]" />
                       </p>
                     </div>
@@ -205,7 +352,7 @@ const HomePage = () => {
                 <div className="gap-y-10 justify-center rounded-full md:w-[200px] md:h-[200px] border-solid border-[15px] w-[10rem] h-[10rem] mb-3">
                   <div className="rounded-full bg-white w-[8.5rem] h-[8.5rem] md:w-[170px] md:h-[170px] flex justify-center shadow-2xl xs:-mt-1 xs:-ml-1 md:-ml-1 md:mt-[0.1em]">
                     <div className="rounded-full rotate-[0deg] md:rotate-[0deg] bg-white md:w-[150px] md:h-[150px] w-[7.5rem] h-[7.5rem] flex justify-center md:mt-[10px] xs:mt-2 shadow-[inset_0_-2px_6px_0px_rgba(0,0,0,0.6)]">
-                      <p className="font-bold bg-white md:mt-8 mt-5 mb-5 md:text-[20px] text-md">
+                      <p className="font-bold bg-white md:mt-8 mt-5 mb-5 md:text-[17px] text-md">
                         CART <UilShoppingCartAlt className="w-9 h-9 xs:ml-1 md:ml-2 mt-5 text-[#5c58e0]" />
                       </p>
                     </div>
@@ -217,7 +364,7 @@ const HomePage = () => {
                 <div className="gap-y-10 justify-center rounded-full md:w-[200px] md:h-[200px] border-solid border-[15px] w-[10rem] h-[10rem] mb-3">
                   <div className="rounded-full bg-white w-[8.5rem] h-[8.5rem] md:w-[170px] md:h-[170px] flex justify-center shadow-2xl xs:-mt-1 xs:-ml-1 md:-ml-1 md:mt-[0.1em]">
                     <div className="rounded-full rotate-[0deg] md:rotate-[0deg] bg-white md:w-[150px] md:h-[150px] w-[7.5rem] h-[7.5rem] flex justify-center md:mt-[10px] xs:mt-2 shadow-[inset_0_-2px_6px_0px_rgba(0,0,0,0.6)]">
-                      <p className="font-bold bg-white md:mt-8 mt-5 mb-5 md:text-[20px] text-md">
+                      <p className="font-bold bg-white md:mt-8 mt-5 mb-5 md:text-[17px] text-md">
                         CHECKOUT <UilCheckCircle className="w-9 h-9 xs:ml-6 md:ml-8 md:mt-5 mt-3 text-[#5c58e0]" />
                       </p>
                     </div>
@@ -226,10 +373,10 @@ const HomePage = () => {
 
                 {/* CIRCUL SECTION-4 */}
 
-                <div className="gap-y-10 justify-center rounded-full md:rotate-[-45deg] md:w-[200px] md:h-[200px] border-solid border-[15px] w-[10rem] h-[10rem]">
-                  <div className="rounded-full bg-white w-[8.5rem] h-[8.5rem] md:w-[170px] md:h-[170px] flex justify-center shadow-2xl xs:-mt-1 xs:-ml-1 md:mt-[0.1em]">
-                    <div className="rounded-full bg-white md:w-[150px] md:h-[150px] w-[7.5rem] h-[7.5rem] flex justify-center md:mt-[10px] xs:mt-2 shadow-[inset_0_-2px_6px_0px_rgba(0,0,0,0.6)]">
-                      <p className="font-bold bg-white mt-8 mb-7 md:text-[20px] text-md">
+                <div className="gap-y-10 justify-center rounded-full md:w-[200px] md:h-[200px] border-solid border-[15px] w-[10rem] h-[10rem] mb-3">
+                  <div className="rounded-full bg-white w-[8.5rem] h-[8.5rem] md:w-[170px] md:h-[170px] flex justify-center shadow-2xl xs:-mt-1 xs:-ml-1 md:-ml-1 md:mt-[0.1em]">
+                    <div className="rounded-full rotate-[0deg] md:rotate-[0deg] bg-white md:w-[150px] md:h-[150px] w-[7.5rem] h-[7.5rem] flex justify-center md:mt-[10px] xs:mt-2 shadow-[inset_0_-2px_6px_0px_rgba(0,0,0,0.6)]">
+                      <p className="font-bold bg-white md:mt-8 mt-5 mb-5 md:text-[17px] text-md">
                         DELIVERED <UilTruck className="w-9 h-9 xs:ml-6 md:ml-9 md:mt-5 mt-3 text-[#5c58e0]" />
                       </p>
                     </div>
