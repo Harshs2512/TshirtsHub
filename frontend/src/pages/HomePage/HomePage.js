@@ -214,10 +214,10 @@ const HomePage = () => {
 
                 {/* CIRCUL SECTION-3  */}
 
-                <div className="gap-y-10 justify-center rounded-full md:rotate-[-45deg] md:w-[200px] md:h-[200px] border-solid border-[15px] w-[10rem] h-[10rem] mb-3">
-                  <div className="rounded-full bg-white w-[8.5rem] h-[8.5rem] md:w-[170px] md:h-[170px] flex justify-center shadow-2xl xs:-mt-1 xs:-ml-1 md:mt-[0.1em]">
-                    <div className="rounded-full bg-white md:w-[150px] md:h-[150px] w-[7.5rem] h-[7.5rem] flex justify-center md:mt-[10px] xs:mt-2 shadow-[inset_0_-2px_6px_0px_rgba(0,0,0,0.6)]">
-                      <p className="font-bold bg-white mt-8 mb-7 md:text-[20px] text-md">
+                <div className="gap-y-10 justify-center rounded-full md:w-[200px] md:h-[200px] border-solid border-[15px] w-[10rem] h-[10rem] mb-3">
+                  <div className="rounded-full bg-white w-[8.5rem] h-[8.5rem] md:w-[170px] md:h-[170px] flex justify-center shadow-2xl xs:-mt-1 xs:-ml-1 md:-ml-1 md:mt-[0.1em]">
+                    <div className="rounded-full rotate-[0deg] md:rotate-[0deg] bg-white md:w-[150px] md:h-[150px] w-[7.5rem] h-[7.5rem] flex justify-center md:mt-[10px] xs:mt-2 shadow-[inset_0_-2px_6px_0px_rgba(0,0,0,0.6)]">
+                      <p className="font-bold bg-white md:mt-8 mt-5 mb-5 md:text-[20px] text-md">
                         CHECKOUT <UilCheckCircle className="w-9 h-9 xs:ml-6 md:ml-8 md:mt-5 mt-3 text-[#5c58e0]" />
                       </p>
                     </div>
