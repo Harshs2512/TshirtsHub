@@ -112,6 +112,7 @@ const ProductDetail = () => {
     const toggleSizeChart = () => {
         setShowSizeChart(!showSizeChart);
     };
+    console.log(product)
     return (
         <Layout title="productdelail">
             <ToastContainer />
@@ -146,7 +147,7 @@ const ProductDetail = () => {
                             <React.Fragment>
                                 <div className="tools grid grid-cols-3">
                                     <button onClick={() => zoomIn()}>
-                                        <div className="w-10 h-10 bg-blue-400/50 rounded-full absolute z-10 left-[8rem] lg:left-[20rem] xs:transform xs:-translate-x-1/2 -translate-y-1/2 lg:top-[35rem] top-[27rem] text-2xl font-extrabold text-white">
+                                        <div className="w-10 h-10 bg-blue-400/50 rounded-full absolute z-10 left-[8rem] lg:left-[20rem] xs:transform xs:-translate-x-1/2 -translate-y-1/2 lg:top-[35rem] top-[28rem] text-2xl font-extrabold text-white">
                                             +
                                         </div>
                                     </button>
@@ -162,14 +163,14 @@ const ProductDetail = () => {
                                     </button>
                                 </div>
                                 <TransformComponent>
-                                    <img src={`http://localhost:8000/api/v1/product-photo/${product._id}`} alt="(test)" />
+                                    <img src={`https://tshirts-8vepwq22n-harshs2512.vercel.app/api/v1/product-photo/${product._id}`} alt="(test)" />
                                 </TransformComponent>
                             </React.Fragment>
                         )}
                     </TransformWrapper>
                 </div>
-                <div className='lg:col-span-4 row-span-4 lg:m-8 lg:order-3 order-3 text-center lg:text-left lg:mt-0 mt-16'>
-                    <h1 className='md:font-lg font-medium text-gray-500 text-lg'>TshirtHub</h1>
+                <div className='lg:col-span-4 row-span-4 lg:m-8 lg:order-3 order-3 text-center lg:text-left lg:mt-0 mt-20'>
+                    <h1 className='md:font-lg font-medium text-gray-500 text-lg mt-4'>TshirtHub</h1>
                     <h1 className='md:font-bold font-semibold text-gray-900 text-5xl mt-2'>{product && product.title}</h1>
                     <h1 className='font-lg text-gray-500 text-base mt-1'>{product.category && product.category.catName}</h1>
                     <hr className='mt-1' />

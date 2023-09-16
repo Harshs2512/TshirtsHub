@@ -305,32 +305,33 @@ const HomePage = () => {
 
         {/* Themes CARD BANNER*/}
         <div>
-          <h1 className='text-3xl font-bold tracking-widest text-center py-10 text-[#7570ff] mt-16  uppercase'>our themes</h1>
+          <h1 className='text-3xl font-bold tracking-widest text-center py-10 text-[#7570ff] mt-16 uppercase'>our themes</h1>
           <div className='grid grid-rows-3 px-5 md:gap-5 gap-2'>
-            <div className='h-60 grid md:grid-cols-3 gap-x-7'>
-              <div className='bg-yellow-800'>
+            <div className='grid md:grid-cols-3 gap-x-7'>
+              <div className='bg-yellow-800 overflow-hidden hover:scale-110 hover:transition-transform hover:duration-400 hover:ease-in-out transform origin-center'>
                 <img className='h-80 w-full' src='cropbanner4.jpg' alt='' />
               </div>
-              <div className='hidden md:block bg-yellow-600'>
+              <div className='hidden md:block bg-yellow-600 overflow-hidden hover:scale-110 hover:transition-transform hover:duration-400 hover:ease-in-out transform origin-center'>
                 <img className='h-80 w-full' src='cropbanner5.jpg' alt='' />
               </div>
-              <div className='hidden md:block bg-yellow-400'>
+              <div className='hidden md:block bg-yellow-400 overflow-hidden hover:scale-110 hover:transition-transform hover:duration-400 hover:ease-in-out transform origin-center'>
                 <img className='h-80 w-full' src='cropbanner4.jpg' alt='' />
               </div>
             </div>
             <div className='h-60 grid md:grid-cols-3 gap-x-7 mt-11'>
-              <div className='bg-yellow-800'>
+              <div className='bg-yellow-800 overflow-hidden hover:scale-110 hover:transition-transform hover:duration-400 hover:ease-in-out transform origin-center'>
                 <img className='h-80 w-full' src='cropbanner4.jpg' alt='' />
               </div>
-              <div className='hidden md:block bg-yellow-600'>
+              <div className='hidden md:block bg-yellow-600 overflow-hidden hover:scale-110 hover:transition-transform hover:duration-400 hover:ease-in-out transform origin-center'>
                 <img className='h-80 w-full' src='cropbanner5.jpg' alt='' />
               </div>
-              <div className='hidden md:block bg-yellow-400'>
+              <div className='hidden md:block bg-yellow-400 overflow-hidden hover:scale-110 hover:transition-transform hover:duration-400 hover:ease-in-out transform origin-center'>
                 <img className='h-80 w-full' src='cropbanner4.jpg' alt='' />
               </div>
             </div>
           </div>
         </div>
+
         <div className="flex justify-center items-center">
           <div className="">
             {/* circle design */}
